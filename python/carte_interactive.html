@@ -1,0 +1,4781 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5b8e3b4d41aa74bcfd849971e2b6ad57 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5b8e3b4d41aa74bcfd849971e2b6ad57" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5b8e3b4d41aa74bcfd849971e2b6ad57 = L.map(
+                "map_5b8e3b4d41aa74bcfd849971e2b6ad57",
+                {
+                    center: [56.1304, -106.3468],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b261e50fa64fc518cd16b8295127979b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b261e50fa64fc518cd16b8295127979b.addTo(map_5b8e3b4d41aa74bcfd849971e2b6ad57);
+        
+    
+            var marker_cluster_f7e4169223d2afe90731a056574ca02e = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_93085123d2fe9777d58cd7a69d4ce4f1 = L.marker(
+                [33.0, 65.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_a3c36d3afbb453dc8c9be2ad0d10a197 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_93085123d2fe9777d58cd7a69d4ce4f1.setIcon(icon_a3c36d3afbb453dc8c9be2ad0d10a197);
+        
+    
+        var popup_7a2d13c08e7ee80c7cad17993101fe2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1575147cf9d055f4a1744c009d64663 = $(`<div id="html_d1575147cf9d055f4a1744c009d64663" style="width: 100.0%; height: 100.0%;">Afghanistan: 8.42 M USD</div>`)[0];
+                popup_7a2d13c08e7ee80c7cad17993101fe2d.setContent(html_d1575147cf9d055f4a1744c009d64663);
+            
+        
+
+        marker_93085123d2fe9777d58cd7a69d4ce4f1.bindPopup(popup_7a2d13c08e7ee80c7cad17993101fe2d)
+        ;
+
+        
+    
+    
+            var marker_d7b444dc9ca3c4d8183efecd357d3130 = L.marker(
+                [41.0, 20.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_af13979cf808af09d2954c9a851f1daa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7b444dc9ca3c4d8183efecd357d3130.setIcon(icon_af13979cf808af09d2954c9a851f1daa);
+        
+    
+        var popup_0256fa8f69971470840197b6ad65c473 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69f64b6b3cba9c64480609f15f46ac39 = $(`<div id="html_69f64b6b3cba9c64480609f15f46ac39" style="width: 100.0%; height: 100.0%;">Albania: 15.94 M USD</div>`)[0];
+                popup_0256fa8f69971470840197b6ad65c473.setContent(html_69f64b6b3cba9c64480609f15f46ac39);
+            
+        
+
+        marker_d7b444dc9ca3c4d8183efecd357d3130.bindPopup(popup_0256fa8f69971470840197b6ad65c473)
+        ;
+
+        
+    
+    
+            var marker_4e8cb153bca7fd3935aee9ebc49e0b98 = L.marker(
+                [28.0, 3.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_f66652c3ee40bb17c41a50cd8982f448 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e8cb153bca7fd3935aee9ebc49e0b98.setIcon(icon_f66652c3ee40bb17c41a50cd8982f448);
+        
+    
+        var popup_8f345812938418aa89735476d098a1dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_beaf4897819bc97f2b8d71ff3f08b94a = $(`<div id="html_beaf4897819bc97f2b8d71ff3f08b94a" style="width: 100.0%; height: 100.0%;">Algeria: 167.80 M USD</div>`)[0];
+                popup_8f345812938418aa89735476d098a1dc.setContent(html_beaf4897819bc97f2b8d71ff3f08b94a);
+            
+        
+
+        marker_4e8cb153bca7fd3935aee9ebc49e0b98.bindPopup(popup_8f345812938418aa89735476d098a1dc)
+        ;
+
+        
+    
+    
+            var marker_6b732de8e68b821768d56ecb06a60009 = L.marker(
+                [-14.33333333, -170.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_4db74ac929b18e935b22d986ed7a9179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b732de8e68b821768d56ecb06a60009.setIcon(icon_4db74ac929b18e935b22d986ed7a9179);
+        
+    
+        var popup_833236724a0c8634b578e07a6ba700a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04215ec5bc5df9d12e121a76a36d5efa = $(`<div id="html_04215ec5bc5df9d12e121a76a36d5efa" style="width: 100.0%; height: 100.0%;">American Samoa: 0.08 M USD</div>`)[0];
+                popup_833236724a0c8634b578e07a6ba700a6.setContent(html_04215ec5bc5df9d12e121a76a36d5efa);
+            
+        
+
+        marker_6b732de8e68b821768d56ecb06a60009.bindPopup(popup_833236724a0c8634b578e07a6ba700a6)
+        ;
+
+        
+    
+    
+            var marker_c2c5e6c6498f03c1a049181fa26a1ac6 = L.marker(
+                [-12.5, 18.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_dae501fcd55f0430435e7027f84333d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c2c5e6c6498f03c1a049181fa26a1ac6.setIcon(icon_dae501fcd55f0430435e7027f84333d5);
+        
+    
+        var popup_d0b2d03f45e54e9bf69941cd91815c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_577fc860d9f321f825938db7e6061ab8 = $(`<div id="html_577fc860d9f321f825938db7e6061ab8" style="width: 100.0%; height: 100.0%;">Angola: 0.11 M USD</div>`)[0];
+                popup_d0b2d03f45e54e9bf69941cd91815c93.setContent(html_577fc860d9f321f825938db7e6061ab8);
+            
+        
+
+        marker_c2c5e6c6498f03c1a049181fa26a1ac6.bindPopup(popup_d0b2d03f45e54e9bf69941cd91815c93)
+        ;
+
+        
+    
+    
+            var marker_82a33b4d8799d1e41b378595b8eb9459 = L.marker(
+                [18.25, -63.16666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_3491a934382a93a7adb65ed8791c0321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82a33b4d8799d1e41b378595b8eb9459.setIcon(icon_3491a934382a93a7adb65ed8791c0321);
+        
+    
+        var popup_3de01c3af85ac072e8e64906206f8ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46090aaf75f7368520afc8e99950083d = $(`<div id="html_46090aaf75f7368520afc8e99950083d" style="width: 100.0%; height: 100.0%;">Anguilla: 0.05 M USD</div>`)[0];
+                popup_3de01c3af85ac072e8e64906206f8ef1.setContent(html_46090aaf75f7368520afc8e99950083d);
+            
+        
+
+        marker_82a33b4d8799d1e41b378595b8eb9459.bindPopup(popup_3de01c3af85ac072e8e64906206f8ef1)
+        ;
+
+        
+    
+    
+            var marker_cccb34b837f3f1a8dd6e9fcfc0a98c45 = L.marker(
+                [17.05, -61.8],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2c0c4f3b9ac22e0264c1c98597d1ff3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cccb34b837f3f1a8dd6e9fcfc0a98c45.setIcon(icon_2c0c4f3b9ac22e0264c1c98597d1ff3b);
+        
+    
+        var popup_79b4e2d009e97268973a4517bfe66189 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c06db7d704a5acb1a94d34318bc4251 = $(`<div id="html_3c06db7d704a5acb1a94d34318bc4251" style="width: 100.0%; height: 100.0%;">Antigua and Barbuda: 0.21 M USD</div>`)[0];
+                popup_79b4e2d009e97268973a4517bfe66189.setContent(html_3c06db7d704a5acb1a94d34318bc4251);
+            
+        
+
+        marker_cccb34b837f3f1a8dd6e9fcfc0a98c45.bindPopup(popup_79b4e2d009e97268973a4517bfe66189)
+        ;
+
+        
+    
+    
+            var marker_7ee911580b77a3d7facf33fe01da3306 = L.marker(
+                [-34.0, -64.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ac8571c502657370c2584506a7e4c586 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ee911580b77a3d7facf33fe01da3306.setIcon(icon_ac8571c502657370c2584506a7e4c586);
+        
+    
+        var popup_d19f2962993eff1582f0f9f44f9857c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16b80311df8ab725c5467bb3e23b2af9 = $(`<div id="html_16b80311df8ab725c5467bb3e23b2af9" style="width: 100.0%; height: 100.0%;">Argentina: 1.01 B USD</div>`)[0];
+                popup_d19f2962993eff1582f0f9f44f9857c0.setContent(html_16b80311df8ab725c5467bb3e23b2af9);
+            
+        
+
+        marker_7ee911580b77a3d7facf33fe01da3306.bindPopup(popup_d19f2962993eff1582f0f9f44f9857c0)
+        ;
+
+        
+    
+    
+            var marker_a7098fe50f2a542ec84310ec63014932 = L.marker(
+                [40.0, 45.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ed9590168e85dd044b899e90d11027a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a7098fe50f2a542ec84310ec63014932.setIcon(icon_ed9590168e85dd044b899e90d11027a4);
+        
+    
+        var popup_f7c903da989e8d142196b4883e9b74c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dc56b5d078d31687237d4816a8664e1 = $(`<div id="html_1dc56b5d078d31687237d4816a8664e1" style="width: 100.0%; height: 100.0%;">Armenia: 6.76 M USD</div>`)[0];
+                popup_f7c903da989e8d142196b4883e9b74c4.setContent(html_1dc56b5d078d31687237d4816a8664e1);
+            
+        
+
+        marker_a7098fe50f2a542ec84310ec63014932.bindPopup(popup_f7c903da989e8d142196b4883e9b74c4)
+        ;
+
+        
+    
+    
+            var marker_d51d3d8d1045c3a121ef24bd846090b9 = L.marker(
+                [12.5, -69.96666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_20ae00a146765d68a9e1466cb26caf0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d51d3d8d1045c3a121ef24bd846090b9.setIcon(icon_20ae00a146765d68a9e1466cb26caf0a);
+        
+    
+        var popup_256dc0696ac7e8fee1c135d487184153 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4fe557d4c9d90e506419ed17ead2fdc = $(`<div id="html_a4fe557d4c9d90e506419ed17ead2fdc" style="width: 100.0%; height: 100.0%;">Aruba: 0.09 M USD</div>`)[0];
+                popup_256dc0696ac7e8fee1c135d487184153.setContent(html_a4fe557d4c9d90e506419ed17ead2fdc);
+            
+        
+
+        marker_d51d3d8d1045c3a121ef24bd846090b9.bindPopup(popup_256dc0696ac7e8fee1c135d487184153)
+        ;
+
+        
+    
+    
+            var marker_3d99dc52b09b43d683f922609fc6b316 = L.marker(
+                [-27.0, 133.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_e039f60d74823dbee08059fceb06f8be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d99dc52b09b43d683f922609fc6b316.setIcon(icon_e039f60d74823dbee08059fceb06f8be);
+        
+    
+        var popup_59747f3e42c58aaf0326c6e164911fa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4005c9f19a6d16dae5edc86fa8a1bba = $(`<div id="html_d4005c9f19a6d16dae5edc86fa8a1bba" style="width: 100.0%; height: 100.0%;">Australia: 2.38 B USD</div>`)[0];
+                popup_59747f3e42c58aaf0326c6e164911fa9.setContent(html_d4005c9f19a6d16dae5edc86fa8a1bba);
+            
+        
+
+        marker_3d99dc52b09b43d683f922609fc6b316.bindPopup(popup_59747f3e42c58aaf0326c6e164911fa9)
+        ;
+
+        
+    
+    
+            var marker_76d67b282666d432399ec89809567b6b = L.marker(
+                [47.33333333, 13.33333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_76a54f88782975f248dc39b2e7b93ea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_76d67b282666d432399ec89809567b6b.setIcon(icon_76a54f88782975f248dc39b2e7b93ea0);
+        
+    
+        var popup_ed0641150dcb4fb7d305f0d55e101f5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88406da2ca609b7fcdf17f353e871772 = $(`<div id="html_88406da2ca609b7fcdf17f353e871772" style="width: 100.0%; height: 100.0%;">Austria: 2.19 B USD</div>`)[0];
+                popup_ed0641150dcb4fb7d305f0d55e101f5e.setContent(html_88406da2ca609b7fcdf17f353e871772);
+            
+        
+
+        marker_76d67b282666d432399ec89809567b6b.bindPopup(popup_ed0641150dcb4fb7d305f0d55e101f5e)
+        ;
+
+        
+    
+    
+            var marker_d86ff2460ea7524dcaeec95feda772ac = L.marker(
+                [40.5, 47.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_871015959d5d896d684c6b742611644f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d86ff2460ea7524dcaeec95feda772ac.setIcon(icon_871015959d5d896d684c6b742611644f);
+        
+    
+        var popup_abd6ac7cd13aba306a9c9e8d779033cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47088bb99a3ada730f47ebdcbd96b636 = $(`<div id="html_47088bb99a3ada730f47ebdcbd96b636" style="width: 100.0%; height: 100.0%;">Azerbaijan: 1.65 M USD</div>`)[0];
+                popup_abd6ac7cd13aba306a9c9e8d779033cd.setContent(html_47088bb99a3ada730f47ebdcbd96b636);
+            
+        
+
+        marker_d86ff2460ea7524dcaeec95feda772ac.bindPopup(popup_abd6ac7cd13aba306a9c9e8d779033cd)
+        ;
+
+        
+    
+    
+            var marker_3d923be1a95d62a1b5faeb27e4a97503 = L.marker(
+                [26.0, 50.55],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_4698e36202f87563aa8b8196fc3e1af4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d923be1a95d62a1b5faeb27e4a97503.setIcon(icon_4698e36202f87563aa8b8196fc3e1af4);
+        
+    
+        var popup_4571c8765e39452a97ab9c005763273e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62b05e3643f1a5074fcd4eb615e0246b = $(`<div id="html_62b05e3643f1a5074fcd4eb615e0246b" style="width: 100.0%; height: 100.0%;">Bahrain: 60.60 M USD</div>`)[0];
+                popup_4571c8765e39452a97ab9c005763273e.setContent(html_62b05e3643f1a5074fcd4eb615e0246b);
+            
+        
+
+        marker_3d923be1a95d62a1b5faeb27e4a97503.bindPopup(popup_4571c8765e39452a97ab9c005763273e)
+        ;
+
+        
+    
+    
+            var marker_47ddca4805d5de505cedbbcad2889ff9 = L.marker(
+                [24.0, 90.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_63c89e00a625d26a657e9f8113c8c079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_47ddca4805d5de505cedbbcad2889ff9.setIcon(icon_63c89e00a625d26a657e9f8113c8c079);
+        
+    
+        var popup_52148776bfe5aed6988af5f343618882 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db2852a9eb236185947d7d6c3423f55f = $(`<div id="html_db2852a9eb236185947d7d6c3423f55f" style="width: 100.0%; height: 100.0%;">Bangladesh: 1.66 B USD</div>`)[0];
+                popup_52148776bfe5aed6988af5f343618882.setContent(html_db2852a9eb236185947d7d6c3423f55f);
+            
+        
+
+        marker_47ddca4805d5de505cedbbcad2889ff9.bindPopup(popup_52148776bfe5aed6988af5f343618882)
+        ;
+
+        
+    
+    
+            var marker_2f425842616ed810da23796f8aa196aa = L.marker(
+                [13.16666666, -59.53333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_3212fce503ab51a621c4f12423fe0382 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f425842616ed810da23796f8aa196aa.setIcon(icon_3212fce503ab51a621c4f12423fe0382);
+        
+    
+        var popup_d9a0e5d49e34bbf069a293d585b4b574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44446037c1bbc95f58afe66477a2728b = $(`<div id="html_44446037c1bbc95f58afe66477a2728b" style="width: 100.0%; height: 100.0%;">Barbados: 17.26 M USD</div>`)[0];
+                popup_d9a0e5d49e34bbf069a293d585b4b574.setContent(html_44446037c1bbc95f58afe66477a2728b);
+            
+        
+
+        marker_2f425842616ed810da23796f8aa196aa.bindPopup(popup_d9a0e5d49e34bbf069a293d585b4b574)
+        ;
+
+        
+    
+    
+            var marker_26fa03e6dc6ee78ce0ecb46a3a1c785f = L.marker(
+                [53.0, 28.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_cfc0f63ce516f5fe6c289d554356142a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26fa03e6dc6ee78ce0ecb46a3a1c785f.setIcon(icon_cfc0f63ce516f5fe6c289d554356142a);
+        
+    
+        var popup_e7f99967536cdee6a0bedb1dd1bc0ffb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31be10c6d5ab4e0c98f04a96004648c6 = $(`<div id="html_31be10c6d5ab4e0c98f04a96004648c6" style="width: 100.0%; height: 100.0%;">Belarus: 3.68 M USD</div>`)[0];
+                popup_e7f99967536cdee6a0bedb1dd1bc0ffb.setContent(html_31be10c6d5ab4e0c98f04a96004648c6);
+            
+        
+
+        marker_26fa03e6dc6ee78ce0ecb46a3a1c785f.bindPopup(popup_e7f99967536cdee6a0bedb1dd1bc0ffb)
+        ;
+
+        
+    
+    
+            var marker_87f022b62e5560e11ede2be510e5a0f8 = L.marker(
+                [50.83333333, 4.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_383776f21bac87972012fc71e09e6f77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87f022b62e5560e11ede2be510e5a0f8.setIcon(icon_383776f21bac87972012fc71e09e6f77);
+        
+    
+        var popup_fc832e1b21b3e6e51a23c3b932c96440 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc1f30492bc2863b9f2610b913fcc7e7 = $(`<div id="html_cc1f30492bc2863b9f2610b913fcc7e7" style="width: 100.0%; height: 100.0%;">Belgium: 3.54 B USD</div>`)[0];
+                popup_fc832e1b21b3e6e51a23c3b932c96440.setContent(html_cc1f30492bc2863b9f2610b913fcc7e7);
+            
+        
+
+        marker_87f022b62e5560e11ede2be510e5a0f8.bindPopup(popup_fc832e1b21b3e6e51a23c3b932c96440)
+        ;
+
+        
+    
+    
+            var marker_8b2025abca48a64d91d7d2e95221f6b9 = L.marker(
+                [17.25, -88.75],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_847c9dfa79b15d5e3a7c9526e93403e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b2025abca48a64d91d7d2e95221f6b9.setIcon(icon_847c9dfa79b15d5e3a7c9526e93403e0);
+        
+    
+        var popup_7da99a66e72d87ccb7a65c608859ce0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_105d876a6132ec9b08de630c9612ef32 = $(`<div id="html_105d876a6132ec9b08de630c9612ef32" style="width: 100.0%; height: 100.0%;">Belize: 3.12 M USD</div>`)[0];
+                popup_7da99a66e72d87ccb7a65c608859ce0b.setContent(html_105d876a6132ec9b08de630c9612ef32);
+            
+        
+
+        marker_8b2025abca48a64d91d7d2e95221f6b9.bindPopup(popup_7da99a66e72d87ccb7a65c608859ce0b)
+        ;
+
+        
+    
+    
+            var marker_febfb240acbdacd60dcf226e42f4f6a2 = L.marker(
+                [9.5, 2.25],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_d8d958d0833a83d0dea475722e4ffc81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_febfb240acbdacd60dcf226e42f4f6a2.setIcon(icon_d8d958d0833a83d0dea475722e4ffc81);
+        
+    
+        var popup_cb1b7ecc8c5383b6c23a0e0671addeb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2648affb47dc235767c21d7b708d290 = $(`<div id="html_b2648affb47dc235767c21d7b708d290" style="width: 100.0%; height: 100.0%;">Benin: 3.48 M USD</div>`)[0];
+                popup_cb1b7ecc8c5383b6c23a0e0671addeb4.setContent(html_b2648affb47dc235767c21d7b708d290);
+            
+        
+
+        marker_febfb240acbdacd60dcf226e42f4f6a2.bindPopup(popup_cb1b7ecc8c5383b6c23a0e0671addeb4)
+        ;
+
+        
+    
+    
+            var marker_93643505f488d7981c81a6b3200160ff = L.marker(
+                [32.33333333, -64.75],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_d08fad1af7494ad6cc8c0ca0fceb49ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_93643505f488d7981c81a6b3200160ff.setIcon(icon_d08fad1af7494ad6cc8c0ca0fceb49ce);
+        
+    
+        var popup_32cbddca173e221f5ba42f23f0d01786 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3aeee8d7f1402b00a60b35a2110d1b0 = $(`<div id="html_c3aeee8d7f1402b00a60b35a2110d1b0" style="width: 100.0%; height: 100.0%;">Bermuda: 0.72 M USD</div>`)[0];
+                popup_32cbddca173e221f5ba42f23f0d01786.setContent(html_c3aeee8d7f1402b00a60b35a2110d1b0);
+            
+        
+
+        marker_93643505f488d7981c81a6b3200160ff.bindPopup(popup_32cbddca173e221f5ba42f23f0d01786)
+        ;
+
+        
+    
+    
+            var marker_f787445e977e5f763c2bdca0a0a1166c = L.marker(
+                [27.5, 90.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_32443c3e80b4eda8507c954b43e2ba08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f787445e977e5f763c2bdca0a0a1166c.setIcon(icon_32443c3e80b4eda8507c954b43e2ba08);
+        
+    
+        var popup_659c5d8d54b9e3eaa286a8704b73399f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_607a07b0d0eb3c943528b31a49829a87 = $(`<div id="html_607a07b0d0eb3c943528b31a49829a87" style="width: 100.0%; height: 100.0%;">Bhutan: 0.01 M USD</div>`)[0];
+                popup_659c5d8d54b9e3eaa286a8704b73399f.setContent(html_607a07b0d0eb3c943528b31a49829a87);
+            
+        
+
+        marker_f787445e977e5f763c2bdca0a0a1166c.bindPopup(popup_659c5d8d54b9e3eaa286a8704b73399f)
+        ;
+
+        
+    
+    
+            var marker_106d44c5bfc1e31d0b24792b5c1e740a = L.marker(
+                [-22.0, 24.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_76b56e5b70f65a2b9c7aba3137c01a14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_106d44c5bfc1e31d0b24792b5c1e740a.setIcon(icon_76b56e5b70f65a2b9c7aba3137c01a14);
+        
+    
+        var popup_9a6ca6574a80bc6e92278ae1a8f73d65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3ac2ddb96029fb572aea31cce04b5d5 = $(`<div id="html_b3ac2ddb96029fb572aea31cce04b5d5" style="width: 100.0%; height: 100.0%;">Botswana: 2.79 M USD</div>`)[0];
+                popup_9a6ca6574a80bc6e92278ae1a8f73d65.setContent(html_b3ac2ddb96029fb572aea31cce04b5d5);
+            
+        
+
+        marker_106d44c5bfc1e31d0b24792b5c1e740a.bindPopup(popup_9a6ca6574a80bc6e92278ae1a8f73d65)
+        ;
+
+        
+    
+    
+            var marker_ceb441af06e13cb3b72fed0476fb6fa8 = L.marker(
+                [-10.0, -55.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_09764ba3a5b2ff08f0b87cdad6439302 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ceb441af06e13cb3b72fed0476fb6fa8.setIcon(icon_09764ba3a5b2ff08f0b87cdad6439302);
+        
+    
+        var popup_708de9613fe52b95ca90b03094213c17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_325339c44030ff630a0c90b9cde6adf6 = $(`<div id="html_325339c44030ff630a0c90b9cde6adf6" style="width: 100.0%; height: 100.0%;">Brazil: 6.79 B USD</div>`)[0];
+                popup_708de9613fe52b95ca90b03094213c17.setContent(html_325339c44030ff630a0c90b9cde6adf6);
+            
+        
+
+        marker_ceb441af06e13cb3b72fed0476fb6fa8.bindPopup(popup_708de9613fe52b95ca90b03094213c17)
+        ;
+
+        
+    
+    
+            var marker_fb539fb3fc9772bbf09d81ad9d556e83 = L.marker(
+                [43.0, 25.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_71afffcf56fe51801a80c340cd33b6d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fb539fb3fc9772bbf09d81ad9d556e83.setIcon(icon_71afffcf56fe51801a80c340cd33b6d8);
+        
+    
+        var popup_75ceb92a8b951d698807cc1e83b030ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab724350043adcc75c1c0aa66d115170 = $(`<div id="html_ab724350043adcc75c1c0aa66d115170" style="width: 100.0%; height: 100.0%;">Bulgaria: 232.98 M USD</div>`)[0];
+                popup_75ceb92a8b951d698807cc1e83b030ec.setContent(html_ab724350043adcc75c1c0aa66d115170);
+            
+        
+
+        marker_fb539fb3fc9772bbf09d81ad9d556e83.bindPopup(popup_75ceb92a8b951d698807cc1e83b030ec)
+        ;
+
+        
+    
+    
+            var marker_72495a873c7b5c2c0300644d5eedde96 = L.marker(
+                [13.0, -2.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_fd607129a7dff8f4384e588e62499bae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72495a873c7b5c2c0300644d5eedde96.setIcon(icon_fd607129a7dff8f4384e588e62499bae);
+        
+    
+        var popup_766b653fceee5dd59fd56138f671d651 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59cac3c8d75646f3bf522c4b5216fe93 = $(`<div id="html_59cac3c8d75646f3bf522c4b5216fe93" style="width: 100.0%; height: 100.0%;">Burkina Faso: 2.05 M USD</div>`)[0];
+                popup_766b653fceee5dd59fd56138f671d651.setContent(html_59cac3c8d75646f3bf522c4b5216fe93);
+            
+        
+
+        marker_72495a873c7b5c2c0300644d5eedde96.bindPopup(popup_766b653fceee5dd59fd56138f671d651)
+        ;
+
+        
+    
+    
+            var marker_1342599553895009add6eca5644ac007 = L.marker(
+                [-3.5, 30.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_85508108d01ab9cf80910bea0ccf3643 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1342599553895009add6eca5644ac007.setIcon(icon_85508108d01ab9cf80910bea0ccf3643);
+        
+    
+        var popup_cce54df3514f641711725d0ee3ec5f9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb7dffa07ff933a9c0516a05e9a6242d = $(`<div id="html_fb7dffa07ff933a9c0516a05e9a6242d" style="width: 100.0%; height: 100.0%;">Burundi: 1.25 M USD</div>`)[0];
+                popup_cce54df3514f641711725d0ee3ec5f9c.setContent(html_fb7dffa07ff933a9c0516a05e9a6242d);
+            
+        
+
+        marker_1342599553895009add6eca5644ac007.bindPopup(popup_cce54df3514f641711725d0ee3ec5f9c)
+        ;
+
+        
+    
+    
+            var marker_b55a50746dda2d197f5bae4ea50ebb7c = L.marker(
+                [13.0, 105.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_836904e95018c05a54280850202987fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b55a50746dda2d197f5bae4ea50ebb7c.setIcon(icon_836904e95018c05a54280850202987fc);
+        
+    
+        var popup_c03594854bb4dd196b3a37b1ea65d518 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_337920b187e790f400239663abae0e57 = $(`<div id="html_337920b187e790f400239663abae0e57" style="width: 100.0%; height: 100.0%;">Cambodia: 1.52 B USD</div>`)[0];
+                popup_c03594854bb4dd196b3a37b1ea65d518.setContent(html_337920b187e790f400239663abae0e57);
+            
+        
+
+        marker_b55a50746dda2d197f5bae4ea50ebb7c.bindPopup(popup_c03594854bb4dd196b3a37b1ea65d518)
+        ;
+
+        
+    
+    
+            var marker_fed7bf2ce14573cecea3624d00b74d01 = L.marker(
+                [6.0, 12.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_e124599838aae2d3ee27b24cb2d4b971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fed7bf2ce14573cecea3624d00b74d01.setIcon(icon_e124599838aae2d3ee27b24cb2d4b971);
+        
+    
+        var popup_d0b88b0b540bdf3462d76d39a63b7472 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8634726151c7ffc471b52a52a6ee454 = $(`<div id="html_c8634726151c7ffc471b52a52a6ee454" style="width: 100.0%; height: 100.0%;">Cameroon: 12.15 M USD</div>`)[0];
+                popup_d0b88b0b540bdf3462d76d39a63b7472.setContent(html_c8634726151c7ffc471b52a52a6ee454);
+            
+        
+
+        marker_fed7bf2ce14573cecea3624d00b74d01.bindPopup(popup_d0b88b0b540bdf3462d76d39a63b7472)
+        ;
+
+        
+    
+    
+            var marker_3e36f8050cf5dcc8e76bd4c89ccd24b9 = L.marker(
+                [60.0, -95.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_8f9b337e0529137624bd8762c6499006 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e36f8050cf5dcc8e76bd4c89ccd24b9.setIcon(icon_8f9b337e0529137624bd8762c6499006);
+        
+    
+        var popup_2412cc25b6070d7f0cdebbd2931dc3eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcd652de0881e5a50c7d84642a20aa2b = $(`<div id="html_bcd652de0881e5a50c7d84642a20aa2b" style="width: 100.0%; height: 100.0%;">Canada: 4.35 B USD</div>`)[0];
+                popup_2412cc25b6070d7f0cdebbd2931dc3eb.setContent(html_bcd652de0881e5a50c7d84642a20aa2b);
+            
+        
+
+        marker_3e36f8050cf5dcc8e76bd4c89ccd24b9.bindPopup(popup_2412cc25b6070d7f0cdebbd2931dc3eb)
+        ;
+
+        
+    
+    
+            var marker_c7d32ef4c3d1393d3e94771ea6bea972 = L.marker(
+                [15.0, 19.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_c1bbe66ba2ae77e15d240bf928c1cd32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7d32ef4c3d1393d3e94771ea6bea972.setIcon(icon_c1bbe66ba2ae77e15d240bf928c1cd32);
+        
+    
+        var popup_875160a04c33ad9dbe93a1d6c8787a9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bcccf413b3b0fd30f3aa61c836c546b = $(`<div id="html_4bcccf413b3b0fd30f3aa61c836c546b" style="width: 100.0%; height: 100.0%;">Chad: 0.07 M USD</div>`)[0];
+                popup_875160a04c33ad9dbe93a1d6c8787a9e.setContent(html_4bcccf413b3b0fd30f3aa61c836c546b);
+            
+        
+
+        marker_c7d32ef4c3d1393d3e94771ea6bea972.bindPopup(popup_875160a04c33ad9dbe93a1d6c8787a9e)
+        ;
+
+        
+    
+    
+            var marker_f1283ff4cca7d6668c9bd65702e75e7a = L.marker(
+                [-30.0, -71.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_385060956bbb5e4710240e59cb7ae0c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1283ff4cca7d6668c9bd65702e75e7a.setIcon(icon_385060956bbb5e4710240e59cb7ae0c2);
+        
+    
+        var popup_3f2af3feeec9f4ad0917218e3679cdf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c246d7fb3f763c0b2e578c3ce3b6f86 = $(`<div id="html_6c246d7fb3f763c0b2e578c3ce3b6f86" style="width: 100.0%; height: 100.0%;">Chile: 1.78 B USD</div>`)[0];
+                popup_3f2af3feeec9f4ad0917218e3679cdf5.setContent(html_6c246d7fb3f763c0b2e578c3ce3b6f86);
+            
+        
+
+        marker_f1283ff4cca7d6668c9bd65702e75e7a.bindPopup(popup_3f2af3feeec9f4ad0917218e3679cdf5)
+        ;
+
+        
+    
+    
+            var marker_456cfc60b4f54cced377ff03c52dc610 = L.marker(
+                [35.0, 105.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_64bc51b42806cb5e1f8ad0d190695cb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_456cfc60b4f54cced377ff03c52dc610.setIcon(icon_64bc51b42806cb5e1f8ad0d190695cb3);
+        
+    
+        var popup_6ea28a88727c55210faff72b090bf031 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fde355afad5b51cbc288aedb171694f1 = $(`<div id="html_fde355afad5b51cbc288aedb171694f1" style="width: 100.0%; height: 100.0%;">China: 66.00 B USD</div>`)[0];
+                popup_6ea28a88727c55210faff72b090bf031.setContent(html_fde355afad5b51cbc288aedb171694f1);
+            
+        
+
+        marker_456cfc60b4f54cced377ff03c52dc610.bindPopup(popup_6ea28a88727c55210faff72b090bf031)
+        ;
+
+        
+    
+    
+            var marker_d1a81be60fd9ca85a8a5065bf823b7f6 = L.marker(
+                [4.0, -72.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2c5a89420a25b4c3d076d742edccf33d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1a81be60fd9ca85a8a5065bf823b7f6.setIcon(icon_2c5a89420a25b4c3d076d742edccf33d);
+        
+    
+        var popup_4314f98f7bfb2e32547def2b4d1e7036 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2689e671e9447a7277d15d296e4a86f = $(`<div id="html_a2689e671e9447a7277d15d296e4a86f" style="width: 100.0%; height: 100.0%;">Colombia: 1.03 B USD</div>`)[0];
+                popup_4314f98f7bfb2e32547def2b4d1e7036.setContent(html_a2689e671e9447a7277d15d296e4a86f);
+            
+        
+
+        marker_d1a81be60fd9ca85a8a5065bf823b7f6.bindPopup(popup_4314f98f7bfb2e32547def2b4d1e7036)
+        ;
+
+        
+    
+    
+            var marker_44adfe1b5307db4a23899c3d9bb3b0ab = L.marker(
+                [-12.16666666, 44.25],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_0f54e8d77e847bb8f9ead523c03895ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44adfe1b5307db4a23899c3d9bb3b0ab.setIcon(icon_0f54e8d77e847bb8f9ead523c03895ef);
+        
+    
+        var popup_77b7cb81d7713c0f05199fab6e417884 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_227f2698a348312947fdba62002b53fb = $(`<div id="html_227f2698a348312947fdba62002b53fb" style="width: 100.0%; height: 100.0%;">Comoros: 0.57 M USD</div>`)[0];
+                popup_77b7cb81d7713c0f05199fab6e417884.setContent(html_227f2698a348312947fdba62002b53fb);
+            
+        
+
+        marker_44adfe1b5307db4a23899c3d9bb3b0ab.bindPopup(popup_77b7cb81d7713c0f05199fab6e417884)
+        ;
+
+        
+    
+    
+            var marker_696b917d97d99541f6607725272c252e = L.marker(
+                [10.0, -84.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_27ac943ca2b5e3fab76be5ddf8868eb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_696b917d97d99541f6607725272c252e.setIcon(icon_27ac943ca2b5e3fab76be5ddf8868eb1);
+        
+    
+        var popup_ebdfea4aa82e0285bf85242d410811b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6e949c1aa3f11fd5939b9a20759fd30 = $(`<div id="html_c6e949c1aa3f11fd5939b9a20759fd30" style="width: 100.0%; height: 100.0%;">Costa Rica: 533.44 M USD</div>`)[0];
+                popup_ebdfea4aa82e0285bf85242d410811b1.setContent(html_c6e949c1aa3f11fd5939b9a20759fd30);
+            
+        
+
+        marker_696b917d97d99541f6607725272c252e.bindPopup(popup_ebdfea4aa82e0285bf85242d410811b1)
+        ;
+
+        
+    
+    
+            var marker_21e2c402c445ef6d9726805075bc6f4b = L.marker(
+                [45.16666666, 15.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_fa11bb7e5f6d8b55797d46245935c949 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21e2c402c445ef6d9726805075bc6f4b.setIcon(icon_fa11bb7e5f6d8b55797d46245935c949);
+        
+    
+        var popup_e8e5b01944a0955a88c7f1e111f21a12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a78bd5ef62df83aee1dc2fbc869eb520 = $(`<div id="html_a78bd5ef62df83aee1dc2fbc869eb520" style="width: 100.0%; height: 100.0%;">Croatia: 75.65 M USD</div>`)[0];
+                popup_e8e5b01944a0955a88c7f1e111f21a12.setContent(html_a78bd5ef62df83aee1dc2fbc869eb520);
+            
+        
+
+        marker_21e2c402c445ef6d9726805075bc6f4b.bindPopup(popup_e8e5b01944a0955a88c7f1e111f21a12)
+        ;
+
+        
+    
+    
+            var marker_70fabe69702ceaa3f159526ca3ae9d54 = L.marker(
+                [21.5, -80.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_04c0501576188830f5a7f44935685106 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70fabe69702ceaa3f159526ca3ae9d54.setIcon(icon_04c0501576188830f5a7f44935685106);
+        
+    
+        var popup_8be342d15ab1eff13235046309c15eec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23cef86050ba6f2a1b384ad20952d1b7 = $(`<div id="html_23cef86050ba6f2a1b384ad20952d1b7" style="width: 100.0%; height: 100.0%;">Cuba: 585.44 M USD</div>`)[0];
+                popup_8be342d15ab1eff13235046309c15eec.setContent(html_23cef86050ba6f2a1b384ad20952d1b7);
+            
+        
+
+        marker_70fabe69702ceaa3f159526ca3ae9d54.bindPopup(popup_8be342d15ab1eff13235046309c15eec)
+        ;
+
+        
+    
+    
+            var marker_412634bacc58fd7eed50c76293b4ff19 = L.marker(
+                [35.0, 33.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_41588bc530f11e334ab2dffbb20c1ed0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_412634bacc58fd7eed50c76293b4ff19.setIcon(icon_41588bc530f11e334ab2dffbb20c1ed0);
+        
+    
+        var popup_b9a2e75493cc593cb55d65dbd7d1cb07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd0fabea8821b534c4e3672d9e5c679b = $(`<div id="html_dd0fabea8821b534c4e3672d9e5c679b" style="width: 100.0%; height: 100.0%;">Cyprus: 9.95 M USD</div>`)[0];
+                popup_b9a2e75493cc593cb55d65dbd7d1cb07.setContent(html_dd0fabea8821b534c4e3672d9e5c679b);
+            
+        
+
+        marker_412634bacc58fd7eed50c76293b4ff19.bindPopup(popup_b9a2e75493cc593cb55d65dbd7d1cb07)
+        ;
+
+        
+    
+    
+            var marker_d91c1433bb64941c348fbb088620196a = L.marker(
+                [56.0, 10.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_0bad92b7f484509914502eba4badab8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d91c1433bb64941c348fbb088620196a.setIcon(icon_0bad92b7f484509914502eba4badab8e);
+        
+    
+        var popup_6c2c960a4c58f16160aa68d12cfcae30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_406b27bdf0e4ca313b66bd98489bdb36 = $(`<div id="html_406b27bdf0e4ca313b66bd98489bdb36" style="width: 100.0%; height: 100.0%;">Denmark: 1.96 B USD</div>`)[0];
+                popup_6c2c960a4c58f16160aa68d12cfcae30.setContent(html_406b27bdf0e4ca313b66bd98489bdb36);
+            
+        
+
+        marker_d91c1433bb64941c348fbb088620196a.bindPopup(popup_6c2c960a4c58f16160aa68d12cfcae30)
+        ;
+
+        
+    
+    
+            var marker_01b646c1f79a492b1b86da9b37807e8f = L.marker(
+                [11.5, 43.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ad5b0d30d0d36160f269c03c4a08e658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01b646c1f79a492b1b86da9b37807e8f.setIcon(icon_ad5b0d30d0d36160f269c03c4a08e658);
+        
+    
+        var popup_f2e3113d1aa806cb4e6b4b7a4b19f69f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdf3469e52acc1f37cc4a92f0fdc3bc9 = $(`<div id="html_bdf3469e52acc1f37cc4a92f0fdc3bc9" style="width: 100.0%; height: 100.0%;">Djibouti: 0.39 M USD</div>`)[0];
+                popup_f2e3113d1aa806cb4e6b4b7a4b19f69f.setContent(html_bdf3469e52acc1f37cc4a92f0fdc3bc9);
+            
+        
+
+        marker_01b646c1f79a492b1b86da9b37807e8f.bindPopup(popup_f2e3113d1aa806cb4e6b4b7a4b19f69f)
+        ;
+
+        
+    
+    
+            var marker_0a725a4fdc027f104f0ebf9aadf64df9 = L.marker(
+                [15.41666666, -61.33333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_050ea722e8590a731e506dec71b29184 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a725a4fdc027f104f0ebf9aadf64df9.setIcon(icon_050ea722e8590a731e506dec71b29184);
+        
+    
+        var popup_bfd6ad922904e05a14dfa0b2a94ce1d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ed90bc6c1bede92f94f84f2d0bba029 = $(`<div id="html_2ed90bc6c1bede92f94f84f2d0bba029" style="width: 100.0%; height: 100.0%;">Dominica: 0.23 M USD</div>`)[0];
+                popup_bfd6ad922904e05a14dfa0b2a94ce1d8.setContent(html_2ed90bc6c1bede92f94f84f2d0bba029);
+            
+        
+
+        marker_0a725a4fdc027f104f0ebf9aadf64df9.bindPopup(popup_bfd6ad922904e05a14dfa0b2a94ce1d8)
+        ;
+
+        
+    
+    
+            var marker_c27f47e0daa252dbfb6332d9e6f7c1d6 = L.marker(
+                [-2.0, -77.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_cea9245b5ebbe6bfd277b47a4bc5241d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c27f47e0daa252dbfb6332d9e6f7c1d6.setIcon(icon_cea9245b5ebbe6bfd277b47a4bc5241d);
+        
+    
+        var popup_3d81149de27f0aa19e8b811b89b16d11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ab7f04378b952942ef52e05ef18a1b7 = $(`<div id="html_4ab7f04378b952942ef52e05ef18a1b7" style="width: 100.0%; height: 100.0%;">Ecuador: 518.09 M USD</div>`)[0];
+                popup_3d81149de27f0aa19e8b811b89b16d11.setContent(html_4ab7f04378b952942ef52e05ef18a1b7);
+            
+        
+
+        marker_c27f47e0daa252dbfb6332d9e6f7c1d6.bindPopup(popup_3d81149de27f0aa19e8b811b89b16d11)
+        ;
+
+        
+    
+    
+            var marker_6b8a5699a61985f46fdc58b49d4de285 = L.marker(
+                [27.0, 30.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_c6f4f8fadd84ea660d486e19c7bfc5b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b8a5699a61985f46fdc58b49d4de285.setIcon(icon_c6f4f8fadd84ea660d486e19c7bfc5b3);
+        
+    
+        var popup_9f66983c298500824b2ca911217fee79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77fc5d86cd1e30a65d10c563b71eb588 = $(`<div id="html_77fc5d86cd1e30a65d10c563b71eb588" style="width: 100.0%; height: 100.0%;">Egypt: 632.40 M USD</div>`)[0];
+                popup_9f66983c298500824b2ca911217fee79.setContent(html_77fc5d86cd1e30a65d10c563b71eb588);
+            
+        
+
+        marker_6b8a5699a61985f46fdc58b49d4de285.bindPopup(popup_9f66983c298500824b2ca911217fee79)
+        ;
+
+        
+    
+    
+            var marker_a4c2b8e752943524fb974e211f2ee117 = L.marker(
+                [13.83333333, -88.91666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_56cdb1b59864b5d4021c2163c1101117 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4c2b8e752943524fb974e211f2ee117.setIcon(icon_56cdb1b59864b5d4021c2163c1101117);
+        
+    
+        var popup_cf3a3dc7f04a73fcc4367511027cd49f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ca32f335dd7eab49c5ce59e03b1964e = $(`<div id="html_8ca32f335dd7eab49c5ce59e03b1964e" style="width: 100.0%; height: 100.0%;">El Salvador: 150.35 M USD</div>`)[0];
+                popup_cf3a3dc7f04a73fcc4367511027cd49f.setContent(html_8ca32f335dd7eab49c5ce59e03b1964e);
+            
+        
+
+        marker_a4c2b8e752943524fb974e211f2ee117.bindPopup(popup_cf3a3dc7f04a73fcc4367511027cd49f)
+        ;
+
+        
+    
+    
+            var marker_6416992287c4fd6c31e99c77c546b93e = L.marker(
+                [2.0, 10.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_eace8422a8505d28c2f301b970d01f23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6416992287c4fd6c31e99c77c546b93e.setIcon(icon_eace8422a8505d28c2f301b970d01f23);
+        
+    
+        var popup_06c5353ec185ffc5c01c50158969bd1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fc9ac03343f52d697809c5a9b36ff5d = $(`<div id="html_3fc9ac03343f52d697809c5a9b36ff5d" style="width: 100.0%; height: 100.0%;">Equatorial Guinea: 15.57 M USD</div>`)[0];
+                popup_06c5353ec185ffc5c01c50158969bd1f.setContent(html_3fc9ac03343f52d697809c5a9b36ff5d);
+            
+        
+
+        marker_6416992287c4fd6c31e99c77c546b93e.bindPopup(popup_06c5353ec185ffc5c01c50158969bd1f)
+        ;
+
+        
+    
+    
+            var marker_c0d0015700d412f21146d27a1ffca9bd = L.marker(
+                [15.0, 39.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_3adb1248eaf8328fdf53fe6b509b5d88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0d0015700d412f21146d27a1ffca9bd.setIcon(icon_3adb1248eaf8328fdf53fe6b509b5d88);
+        
+    
+        var popup_cca406f645be6e752f078f2fde67e107 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b8eaf73b3a69c9c9a65787ee6a2076f = $(`<div id="html_2b8eaf73b3a69c9c9a65787ee6a2076f" style="width: 100.0%; height: 100.0%;">Eritrea: 0.49 M USD</div>`)[0];
+                popup_cca406f645be6e752f078f2fde67e107.setContent(html_2b8eaf73b3a69c9c9a65787ee6a2076f);
+            
+        
+
+        marker_c0d0015700d412f21146d27a1ffca9bd.bindPopup(popup_cca406f645be6e752f078f2fde67e107)
+        ;
+
+        
+    
+    
+            var marker_43d2b3611ae31b608a62a7c9cf1e091f = L.marker(
+                [59.0, 26.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_0abde91b519d172f85d8ddba6ab31122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43d2b3611ae31b608a62a7c9cf1e091f.setIcon(icon_0abde91b519d172f85d8ddba6ab31122);
+        
+    
+        var popup_2cfe52e1d4ecd2035d9e5d19dbc7c433 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_497d1e0f691f264976756ea3e17c1d92 = $(`<div id="html_497d1e0f691f264976756ea3e17c1d92" style="width: 100.0%; height: 100.0%;">Estonia: 109.95 M USD</div>`)[0];
+                popup_2cfe52e1d4ecd2035d9e5d19dbc7c433.setContent(html_497d1e0f691f264976756ea3e17c1d92);
+            
+        
+
+        marker_43d2b3611ae31b608a62a7c9cf1e091f.bindPopup(popup_2cfe52e1d4ecd2035d9e5d19dbc7c433)
+        ;
+
+        
+    
+    
+            var marker_3c0bbcea5327e9308c0298eda342bceb = L.marker(
+                [8.0, 38.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_c5ee79e6edeceb918fe15fcfa047ed61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c0bbcea5327e9308c0298eda342bceb.setIcon(icon_c5ee79e6edeceb918fe15fcfa047ed61);
+        
+    
+        var popup_ebba26540a309ac026bdb8c1cf25c44a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e81d5c48f5c8b42a71997dd8d530794e = $(`<div id="html_e81d5c48f5c8b42a71997dd8d530794e" style="width: 100.0%; height: 100.0%;">Ethiopia: 51.67 M USD</div>`)[0];
+                popup_ebba26540a309ac026bdb8c1cf25c44a.setContent(html_e81d5c48f5c8b42a71997dd8d530794e);
+            
+        
+
+        marker_3c0bbcea5327e9308c0298eda342bceb.bindPopup(popup_ebba26540a309ac026bdb8c1cf25c44a)
+        ;
+
+        
+    
+    
+            var marker_92682966f3d5ba04a36f007d7b76f9aa = L.marker(
+                [-18.0, 175.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_97c564f3e154f23425588ab48162a12c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92682966f3d5ba04a36f007d7b76f9aa.setIcon(icon_97c564f3e154f23425588ab48162a12c);
+        
+    
+        var popup_8686c1beb1f4b9fa4a36c808110e9bb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_654279f8f07f6fb0bd19e01c8214ecbc = $(`<div id="html_654279f8f07f6fb0bd19e01c8214ecbc" style="width: 100.0%; height: 100.0%;">Fiji: 6.28 M USD</div>`)[0];
+                popup_8686c1beb1f4b9fa4a36c808110e9bb9.setContent(html_654279f8f07f6fb0bd19e01c8214ecbc);
+            
+        
+
+        marker_92682966f3d5ba04a36f007d7b76f9aa.bindPopup(popup_8686c1beb1f4b9fa4a36c808110e9bb9)
+        ;
+
+        
+    
+    
+            var marker_e50d3116411254a82e14da141ce1fb1e = L.marker(
+                [64.0, 26.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_06574058952bc7660127c26e2579e99a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e50d3116411254a82e14da141ce1fb1e.setIcon(icon_06574058952bc7660127c26e2579e99a);
+        
+    
+        var popup_6a7a8bb4d624f80dc37b34b491c2ca9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8db2c3bce35887c0b5a72f5a2c45599a = $(`<div id="html_8db2c3bce35887c0b5a72f5a2c45599a" style="width: 100.0%; height: 100.0%;">Finland: 1.43 B USD</div>`)[0];
+                popup_6a7a8bb4d624f80dc37b34b491c2ca9a.setContent(html_8db2c3bce35887c0b5a72f5a2c45599a);
+            
+        
+
+        marker_e50d3116411254a82e14da141ce1fb1e.bindPopup(popup_6a7a8bb4d624f80dc37b34b491c2ca9a)
+        ;
+
+        
+    
+    
+            var marker_29f323a509c8ea74abaa7290b12eb16b = L.marker(
+                [46.0, 2.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_8c03fc400f81000f0507d08963e46e66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29f323a509c8ea74abaa7290b12eb16b.setIcon(icon_8c03fc400f81000f0507d08963e46e66);
+        
+    
+        var popup_d4ede0430b7ffe1fd47f31cae183e899 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a9a2c5c9b025ea85f5b1f5d726d2931 = $(`<div id="html_8a9a2c5c9b025ea85f5b1f5d726d2931" style="width: 100.0%; height: 100.0%;">France: 6.39 B USD</div>`)[0];
+                popup_d4ede0430b7ffe1fd47f31cae183e899.setContent(html_8a9a2c5c9b025ea85f5b1f5d726d2931);
+            
+        
+
+        marker_29f323a509c8ea74abaa7290b12eb16b.bindPopup(popup_d4ede0430b7ffe1fd47f31cae183e899)
+        ;
+
+        
+    
+    
+            var marker_923fbd65bf147a9ea1d66122ea65ec55 = L.marker(
+                [-15.0, -140.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_8c17ba8286f63819a1b33bea17fa7d6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_923fbd65bf147a9ea1d66122ea65ec55.setIcon(icon_8c17ba8286f63819a1b33bea17fa7d6d);
+        
+    
+        var popup_369d1129665f2111edea0562ea8e9e61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_689eed04feed321d08939e8ab72638ec = $(`<div id="html_689eed04feed321d08939e8ab72638ec" style="width: 100.0%; height: 100.0%;">French Polynesia: 1.31 M USD</div>`)[0];
+                popup_369d1129665f2111edea0562ea8e9e61.setContent(html_689eed04feed321d08939e8ab72638ec);
+            
+        
+
+        marker_923fbd65bf147a9ea1d66122ea65ec55.bindPopup(popup_369d1129665f2111edea0562ea8e9e61)
+        ;
+
+        
+    
+    
+            var marker_307f87f3a29d0ec3b95abff2fc4375b9 = L.marker(
+                [-1.0, 11.75],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_5280f0b8c7861d8d67c506c040964b37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_307f87f3a29d0ec3b95abff2fc4375b9.setIcon(icon_5280f0b8c7861d8d67c506c040964b37);
+        
+    
+        var popup_39618e910f9fbcd1ce0c5f7a5081f6ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b102f66daad35a3681e39d2312149afd = $(`<div id="html_b102f66daad35a3681e39d2312149afd" style="width: 100.0%; height: 100.0%;">Gabon: 1.53 M USD</div>`)[0];
+                popup_39618e910f9fbcd1ce0c5f7a5081f6ce.setContent(html_b102f66daad35a3681e39d2312149afd);
+            
+        
+
+        marker_307f87f3a29d0ec3b95abff2fc4375b9.bindPopup(popup_39618e910f9fbcd1ce0c5f7a5081f6ce)
+        ;
+
+        
+    
+    
+            var marker_86439230acf7116694fed6458246a997 = L.marker(
+                [42.0, 43.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_9b4302bc4533d883be9ee62381764d39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86439230acf7116694fed6458246a997.setIcon(icon_9b4302bc4533d883be9ee62381764d39);
+        
+    
+        var popup_24edc2430ac7c72da67e54400a56243a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a1dd7ce882e639437a24de49db53328 = $(`<div id="html_0a1dd7ce882e639437a24de49db53328" style="width: 100.0%; height: 100.0%;">Georgia: 26.01 M USD</div>`)[0];
+                popup_24edc2430ac7c72da67e54400a56243a.setContent(html_0a1dd7ce882e639437a24de49db53328);
+            
+        
+
+        marker_86439230acf7116694fed6458246a997.bindPopup(popup_24edc2430ac7c72da67e54400a56243a)
+        ;
+
+        
+    
+    
+            var marker_07fe4439465afcfdaa05c84a615e2f8a = L.marker(
+                [51.0, 9.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_57d262e76b6aa51a7662ec098e7e35ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07fe4439465afcfdaa05c84a615e2f8a.setIcon(icon_57d262e76b6aa51a7662ec098e7e35ea);
+        
+    
+        var popup_756ccdd3a688057cf8d6465cec7bf5ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb6366e5d58be8e82ae5f6f774a523b1 = $(`<div id="html_eb6366e5d58be8e82ae5f6f774a523b1" style="width: 100.0%; height: 100.0%;">Germany: 18.48 B USD</div>`)[0];
+                popup_756ccdd3a688057cf8d6465cec7bf5ff.setContent(html_eb6366e5d58be8e82ae5f6f774a523b1);
+            
+        
+
+        marker_07fe4439465afcfdaa05c84a615e2f8a.bindPopup(popup_756ccdd3a688057cf8d6465cec7bf5ff)
+        ;
+
+        
+    
+    
+            var marker_0d898c526a1dcc9e87abea34924463c3 = L.marker(
+                [8.0, -2.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_8944b3da0f40f7ad4bbc351d5f534042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d898c526a1dcc9e87abea34924463c3.setIcon(icon_8944b3da0f40f7ad4bbc351d5f534042);
+        
+    
+        var popup_f28ddd7c27ec96b8e9951cb82d62738a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b391131542a8cd01e05a76688fa724c0 = $(`<div id="html_b391131542a8cd01e05a76688fa724c0" style="width: 100.0%; height: 100.0%;">Ghana: 73.80 M USD</div>`)[0];
+                popup_f28ddd7c27ec96b8e9951cb82d62738a.setContent(html_b391131542a8cd01e05a76688fa724c0);
+            
+        
+
+        marker_0d898c526a1dcc9e87abea34924463c3.bindPopup(popup_f28ddd7c27ec96b8e9951cb82d62738a)
+        ;
+
+        
+    
+    
+            var marker_16ffc8fdb3ac2fa1237a5d6e1fb1e271 = L.marker(
+                [36.13333333, -5.35],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_bdc80fbe9227247df4648748d23a503f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16ffc8fdb3ac2fa1237a5d6e1fb1e271.setIcon(icon_bdc80fbe9227247df4648748d23a503f);
+        
+    
+        var popup_6b00e61604facfe1afff544ec124365c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db90cf76714e4c827ae4382fcd8062f4 = $(`<div id="html_db90cf76714e4c827ae4382fcd8062f4" style="width: 100.0%; height: 100.0%;">Gibraltar: 0.10 M USD</div>`)[0];
+                popup_6b00e61604facfe1afff544ec124365c.setContent(html_db90cf76714e4c827ae4382fcd8062f4);
+            
+        
+
+        marker_16ffc8fdb3ac2fa1237a5d6e1fb1e271.bindPopup(popup_6b00e61604facfe1afff544ec124365c)
+        ;
+
+        
+    
+    
+            var marker_5060f7d505e45fd00839d999ed85de67 = L.marker(
+                [39.0, 22.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_37ad692f743b871f19002e24de670d4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5060f7d505e45fd00839d999ed85de67.setIcon(icon_37ad692f743b871f19002e24de670d4d);
+        
+    
+        var popup_c4d3d7950f09a777e79ee39e64be94f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3240115a457ea008eae400f81685c6d8 = $(`<div id="html_3240115a457ea008eae400f81685c6d8" style="width: 100.0%; height: 100.0%;">Greece: 299.24 M USD</div>`)[0];
+                popup_c4d3d7950f09a777e79ee39e64be94f5.setContent(html_3240115a457ea008eae400f81685c6d8);
+            
+        
+
+        marker_5060f7d505e45fd00839d999ed85de67.bindPopup(popup_c4d3d7950f09a777e79ee39e64be94f5)
+        ;
+
+        
+    
+    
+            var marker_3d81760362440a9913e6d4c842782038 = L.marker(
+                [72.0, -40.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_686b80e8c3ef59dfc45d3873886b4ae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d81760362440a9913e6d4c842782038.setIcon(icon_686b80e8c3ef59dfc45d3873886b4ae1);
+        
+    
+        var popup_074853d090203f48c160ec0981593174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8341d0454b3a373bc9ed0af7ca619cec = $(`<div id="html_8341d0454b3a373bc9ed0af7ca619cec" style="width: 100.0%; height: 100.0%;">Greenland: 1.43 M USD</div>`)[0];
+                popup_074853d090203f48c160ec0981593174.setContent(html_8341d0454b3a373bc9ed0af7ca619cec);
+            
+        
+
+        marker_3d81760362440a9913e6d4c842782038.bindPopup(popup_074853d090203f48c160ec0981593174)
+        ;
+
+        
+    
+    
+            var marker_322a942eb618c58833fa6efe45035e64 = L.marker(
+                [12.11666666, -61.66666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_031e34e8dc526a52bbba7ae54e19f52f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_322a942eb618c58833fa6efe45035e64.setIcon(icon_031e34e8dc526a52bbba7ae54e19f52f);
+        
+    
+        var popup_9f0b4640c10e05ba560104df64cbf5f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9393473eac896fcc26e0c5a6c15ea9a = $(`<div id="html_d9393473eac896fcc26e0c5a6c15ea9a" style="width: 100.0%; height: 100.0%;">Grenada: 1.51 M USD</div>`)[0];
+                popup_9f0b4640c10e05ba560104df64cbf5f7.setContent(html_d9393473eac896fcc26e0c5a6c15ea9a);
+            
+        
+
+        marker_322a942eb618c58833fa6efe45035e64.bindPopup(popup_9f0b4640c10e05ba560104df64cbf5f7)
+        ;
+
+        
+    
+    
+            var marker_42fcb05b06b23a186939484688cbbf56 = L.marker(
+                [13.46666666, 144.78333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_1665d6b5d2aecfd9a7aec4f38d86553a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42fcb05b06b23a186939484688cbbf56.setIcon(icon_1665d6b5d2aecfd9a7aec4f38d86553a);
+        
+    
+        var popup_6121b9156a524b3855b37acc7b729dec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17f5e1488994da9ea1eb3d067e8bab67 = $(`<div id="html_17f5e1488994da9ea1eb3d067e8bab67" style="width: 100.0%; height: 100.0%;">Guam: 0.12 M USD</div>`)[0];
+                popup_6121b9156a524b3855b37acc7b729dec.setContent(html_17f5e1488994da9ea1eb3d067e8bab67);
+            
+        
+
+        marker_42fcb05b06b23a186939484688cbbf56.bindPopup(popup_6121b9156a524b3855b37acc7b729dec)
+        ;
+
+        
+    
+    
+            var marker_2cffc40c79ed1e2790eefc1b531b63a2 = L.marker(
+                [15.5, -90.25],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_4aa0d08336747d2138245a52f85f674c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2cffc40c79ed1e2790eefc1b531b63a2.setIcon(icon_4aa0d08336747d2138245a52f85f674c);
+        
+    
+        var popup_142eda56a3fc80a6e7999cc692e3e116 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22fa494d48e47dbb20bc74e2fa3b3ea6 = $(`<div id="html_22fa494d48e47dbb20bc74e2fa3b3ea6" style="width: 100.0%; height: 100.0%;">Guatemala: 593.27 M USD</div>`)[0];
+                popup_142eda56a3fc80a6e7999cc692e3e116.setContent(html_22fa494d48e47dbb20bc74e2fa3b3ea6);
+            
+        
+
+        marker_2cffc40c79ed1e2790eefc1b531b63a2.bindPopup(popup_142eda56a3fc80a6e7999cc692e3e116)
+        ;
+
+        
+    
+    
+            var marker_e26a591ca2bca135779288a2d172ad79 = L.marker(
+                [11.0, -10.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_dfea388cf4fb172a06c67c315bc1a04d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e26a591ca2bca135779288a2d172ad79.setIcon(icon_dfea388cf4fb172a06c67c315bc1a04d);
+        
+    
+        var popup_da8ac34b41acd87d3aa528979c91ef61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab32d09a824295c80e77d9f55145cf11 = $(`<div id="html_ab32d09a824295c80e77d9f55145cf11" style="width: 100.0%; height: 100.0%;">Guinea: 59.73 M USD</div>`)[0];
+                popup_da8ac34b41acd87d3aa528979c91ef61.setContent(html_ab32d09a824295c80e77d9f55145cf11);
+            
+        
+
+        marker_e26a591ca2bca135779288a2d172ad79.bindPopup(popup_da8ac34b41acd87d3aa528979c91ef61)
+        ;
+
+        
+    
+    
+            var marker_b66757117b009458299ad1d352628561 = L.marker(
+                [12.0, -15.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_1643860395e412662ce937a3bae7ddc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b66757117b009458299ad1d352628561.setIcon(icon_1643860395e412662ce937a3bae7ddc2);
+        
+    
+        var popup_7c529c4e63208ccfafc13e1b511d71c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5232e5277a01761358b2dd4c85039e1 = $(`<div id="html_c5232e5277a01761358b2dd4c85039e1" style="width: 100.0%; height: 100.0%;">Guinea-Bissau: 0.01 M USD</div>`)[0];
+                popup_7c529c4e63208ccfafc13e1b511d71c8.setContent(html_c5232e5277a01761358b2dd4c85039e1);
+            
+        
+
+        marker_b66757117b009458299ad1d352628561.bindPopup(popup_7c529c4e63208ccfafc13e1b511d71c8)
+        ;
+
+        
+    
+    
+            var marker_734534554e474e7aed67e8b907c465d8 = L.marker(
+                [5.0, -59.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_87f9364bec43e0b8811e7eca4d27c78a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_734534554e474e7aed67e8b907c465d8.setIcon(icon_87f9364bec43e0b8811e7eca4d27c78a);
+        
+    
+        var popup_49bc795e59fef93f61a57745391ba201 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc560dd0f29c7ede0e53cbaf3fad13d6 = $(`<div id="html_dc560dd0f29c7ede0e53cbaf3fad13d6" style="width: 100.0%; height: 100.0%;">Guyana: 157.98 M USD</div>`)[0];
+                popup_49bc795e59fef93f61a57745391ba201.setContent(html_dc560dd0f29c7ede0e53cbaf3fad13d6);
+            
+        
+
+        marker_734534554e474e7aed67e8b907c465d8.bindPopup(popup_49bc795e59fef93f61a57745391ba201)
+        ;
+
+        
+    
+    
+            var marker_bd7be668e5a77a89e530007c2d4a04d3 = L.marker(
+                [19.0, -72.41666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ea751a431d2939a351749f3675393f71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd7be668e5a77a89e530007c2d4a04d3.setIcon(icon_ea751a431d2939a351749f3675393f71);
+        
+    
+        var popup_c5b574160c793f4100630873faad5691 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21803cf3960cd1011aab6baf5cf90032 = $(`<div id="html_21803cf3960cd1011aab6baf5cf90032" style="width: 100.0%; height: 100.0%;">Haiti: 36.42 M USD</div>`)[0];
+                popup_c5b574160c793f4100630873faad5691.setContent(html_21803cf3960cd1011aab6baf5cf90032);
+            
+        
+
+        marker_bd7be668e5a77a89e530007c2d4a04d3.bindPopup(popup_c5b574160c793f4100630873faad5691)
+        ;
+
+        
+    
+    
+            var marker_680d5abb32eff416eb509c5fd3009825 = L.marker(
+                [-53.1, 72.51666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_0e8429e9d135a250ccd5c1790be11abb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_680d5abb32eff416eb509c5fd3009825.setIcon(icon_0e8429e9d135a250ccd5c1790be11abb);
+        
+    
+        var popup_64d8662fdf407eb8b4728d0dbe012362 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_247f0fdb3475be190570e9c9196c6a96 = $(`<div id="html_247f0fdb3475be190570e9c9196c6a96" style="width: 100.0%; height: 100.0%;">Heard Island and McDonald Islands: 0.01 M USD</div>`)[0];
+                popup_64d8662fdf407eb8b4728d0dbe012362.setContent(html_247f0fdb3475be190570e9c9196c6a96);
+            
+        
+
+        marker_680d5abb32eff416eb509c5fd3009825.bindPopup(popup_64d8662fdf407eb8b4728d0dbe012362)
+        ;
+
+        
+    
+    
+            var marker_052e31dc72f5a6cdba2b14ffa8bfa8b0 = L.marker(
+                [15.0, -86.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_fc6ca3a0a4a83eea8ba5d97059b212bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_052e31dc72f5a6cdba2b14ffa8bfa8b0.setIcon(icon_fc6ca3a0a4a83eea8ba5d97059b212bb);
+        
+    
+        var popup_21e492e871747af0f6df7f20b5304f5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a885506377a2719c887daecf6c95b01 = $(`<div id="html_5a885506377a2719c887daecf6c95b01" style="width: 100.0%; height: 100.0%;">Honduras: 418.77 M USD</div>`)[0];
+                popup_21e492e871747af0f6df7f20b5304f5e.setContent(html_5a885506377a2719c887daecf6c95b01);
+            
+        
+
+        marker_052e31dc72f5a6cdba2b14ffa8bfa8b0.bindPopup(popup_21e492e871747af0f6df7f20b5304f5e)
+        ;
+
+        
+    
+    
+            var marker_0f4a922b2b113fa7e72891cd03114907 = L.marker(
+                [47.0, 20.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_a17a03a7ae97e9bd7ce2a6dc1e12aeb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f4a922b2b113fa7e72891cd03114907.setIcon(icon_a17a03a7ae97e9bd7ce2a6dc1e12aeb5);
+        
+    
+        var popup_02a370b968e1252a7a3be5ea7805b331 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb07cad4922c7cc3fefd6a4b7e495671 = $(`<div id="html_eb07cad4922c7cc3fefd6a4b7e495671" style="width: 100.0%; height: 100.0%;">Hungary: 750.11 M USD</div>`)[0];
+                popup_02a370b968e1252a7a3be5ea7805b331.setContent(html_eb07cad4922c7cc3fefd6a4b7e495671);
+            
+        
+
+        marker_0f4a922b2b113fa7e72891cd03114907.bindPopup(popup_02a370b968e1252a7a3be5ea7805b331)
+        ;
+
+        
+    
+    
+            var marker_873bab489ee22d3bb419b25042157a4b = L.marker(
+                [65.0, -18.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2876ded88a837dfa23518d6718bd68ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_873bab489ee22d3bb419b25042157a4b.setIcon(icon_2876ded88a837dfa23518d6718bd68ce);
+        
+    
+        var popup_2f5cf78701ccf2742b10fbfffa9fb5be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71d7578364ab0a253999dcb4f889f4bf = $(`<div id="html_71d7578364ab0a253999dcb4f889f4bf" style="width: 100.0%; height: 100.0%;">Iceland: 114.99 M USD</div>`)[0];
+                popup_2f5cf78701ccf2742b10fbfffa9fb5be.setContent(html_71d7578364ab0a253999dcb4f889f4bf);
+            
+        
+
+        marker_873bab489ee22d3bb419b25042157a4b.bindPopup(popup_2f5cf78701ccf2742b10fbfffa9fb5be)
+        ;
+
+        
+    
+    
+            var marker_194d79753b5778ffc1833158222ee17d = L.marker(
+                [20.0, 77.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_049bc750f44de297d5eaa78039718a46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_194d79753b5778ffc1833158222ee17d.setIcon(icon_049bc750f44de297d5eaa78039718a46);
+        
+    
+        var popup_950e07aa9f479c637c4584a4e5b2b095 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8778cc0b408bc7b937cda3b0c10d315a = $(`<div id="html_8778cc0b408bc7b937cda3b0c10d315a" style="width: 100.0%; height: 100.0%;">India: 5.57 B USD</div>`)[0];
+                popup_950e07aa9f479c637c4584a4e5b2b095.setContent(html_8778cc0b408bc7b937cda3b0c10d315a);
+            
+        
+
+        marker_194d79753b5778ffc1833158222ee17d.bindPopup(popup_950e07aa9f479c637c4584a4e5b2b095)
+        ;
+
+        
+    
+    
+            var marker_f0c306554625cb497df4fab23197b598 = L.marker(
+                [-5.0, 120.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2606f7fd38c9a7270c661d329dec02e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0c306554625cb497df4fab23197b598.setIcon(icon_2606f7fd38c9a7270c661d329dec02e5);
+        
+    
+        var popup_66ea35c03588051b6c0457ac9a1ce3d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f03710d44e60763e5caabf0b88bc06f = $(`<div id="html_1f03710d44e60763e5caabf0b88bc06f" style="width: 100.0%; height: 100.0%;">Indonesia: 2.07 B USD</div>`)[0];
+                popup_66ea35c03588051b6c0457ac9a1ce3d8.setContent(html_1f03710d44e60763e5caabf0b88bc06f);
+            
+        
+
+        marker_f0c306554625cb497df4fab23197b598.bindPopup(popup_66ea35c03588051b6c0457ac9a1ce3d8)
+        ;
+
+        
+    
+    
+            var marker_9b4470fe9050ffe713894885149207e5 = L.marker(
+                [32.0, 53.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_f17d1ad60fd50859d0fc7727e7441282 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b4470fe9050ffe713894885149207e5.setIcon(icon_f17d1ad60fd50859d0fc7727e7441282);
+        
+    
+        var popup_fbb78af76ed63086980f7a18b87dfb39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78ef7b949b7549cef25bd6362b62e5a6 = $(`<div id="html_78ef7b949b7549cef25bd6362b62e5a6" style="width: 100.0%; height: 100.0%;">Iran: 26.90 M USD</div>`)[0];
+                popup_fbb78af76ed63086980f7a18b87dfb39.setContent(html_78ef7b949b7549cef25bd6362b62e5a6);
+            
+        
+
+        marker_9b4470fe9050ffe713894885149207e5.bindPopup(popup_fbb78af76ed63086980f7a18b87dfb39)
+        ;
+
+        
+    
+    
+            var marker_e766f4024fee5c4640b92ebab23cd565 = L.marker(
+                [33.0, 44.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_d61fe636fed43e66f486ae4a1b789612 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e766f4024fee5c4640b92ebab23cd565.setIcon(icon_d61fe636fed43e66f486ae4a1b789612);
+        
+    
+        var popup_5aa71a21f601ad4ab89666f9fa240780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0be9b31f4126bf46802791dc94cb69c8 = $(`<div id="html_0be9b31f4126bf46802791dc94cb69c8" style="width: 100.0%; height: 100.0%;">Iraq: 0.58 M USD</div>`)[0];
+                popup_5aa71a21f601ad4ab89666f9fa240780.setContent(html_0be9b31f4126bf46802791dc94cb69c8);
+            
+        
+
+        marker_e766f4024fee5c4640b92ebab23cd565.bindPopup(popup_5aa71a21f601ad4ab89666f9fa240780)
+        ;
+
+        
+    
+    
+            var marker_3078a8cdf08683a1abf6dbbf08d836ed = L.marker(
+                [53.0, -8.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_e6e8063850db90b19c738b07e1201853 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3078a8cdf08683a1abf6dbbf08d836ed.setIcon(icon_e6e8063850db90b19c738b07e1201853);
+        
+    
+        var popup_36b305e8f558f31624f027ba2ea07fb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_473746b6490c5feefaa7fe4b57aa5eaf = $(`<div id="html_473746b6490c5feefaa7fe4b57aa5eaf" style="width: 100.0%; height: 100.0%;">Ireland: 2.44 B USD</div>`)[0];
+                popup_36b305e8f558f31624f027ba2ea07fb2.setContent(html_473746b6490c5feefaa7fe4b57aa5eaf);
+            
+        
+
+        marker_3078a8cdf08683a1abf6dbbf08d836ed.bindPopup(popup_36b305e8f558f31624f027ba2ea07fb2)
+        ;
+
+        
+    
+    
+            var marker_16cb989ba202f14961ba40a17862ce47 = L.marker(
+                [31.5, 34.75],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_8258d34f224c0ec50db602a913e94418 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16cb989ba202f14961ba40a17862ce47.setIcon(icon_8258d34f224c0ec50db602a913e94418);
+        
+    
+        var popup_5506b6630cb5f05eb394c9c89a818368 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dea979070c3240bf7975196587ef5e91 = $(`<div id="html_dea979070c3240bf7975196587ef5e91" style="width: 100.0%; height: 100.0%;">Israel: 1.07 B USD</div>`)[0];
+                popup_5506b6630cb5f05eb394c9c89a818368.setContent(html_dea979070c3240bf7975196587ef5e91);
+            
+        
+
+        marker_16cb989ba202f14961ba40a17862ce47.bindPopup(popup_5506b6630cb5f05eb394c9c89a818368)
+        ;
+
+        
+    
+    
+            var marker_08453d9ce6d5a1f318daef42dafe6f7e = L.marker(
+                [42.83333333, 12.83333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_0929dfe906c123252074995e697510e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08453d9ce6d5a1f318daef42dafe6f7e.setIcon(icon_0929dfe906c123252074995e697510e6);
+        
+    
+        var popup_d98571c0b6d8d970c121b3ff72a238ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dfa9fa6ad3da1930301a582723287b0 = $(`<div id="html_9dfa9fa6ad3da1930301a582723287b0" style="width: 100.0%; height: 100.0%;">Italy: 9.52 B USD</div>`)[0];
+                popup_d98571c0b6d8d970c121b3ff72a238ea.setContent(html_9dfa9fa6ad3da1930301a582723287b0);
+            
+        
+
+        marker_08453d9ce6d5a1f318daef42dafe6f7e.bindPopup(popup_d98571c0b6d8d970c121b3ff72a238ea)
+        ;
+
+        
+    
+    
+            var marker_b830902415bbc053bf8b9a897a5ba5f5 = L.marker(
+                [18.25, -77.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_9846f14518e303009131be877a2a2cd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b830902415bbc053bf8b9a897a5ba5f5.setIcon(icon_9846f14518e303009131be877a2a2cd6);
+        
+    
+        var popup_e6b430a3aa2d1082597e0ec40b0fb5c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3fd140355a31262f959b61b6fbddb7c = $(`<div id="html_b3fd140355a31262f959b61b6fbddb7c" style="width: 100.0%; height: 100.0%;">Jamaica: 49.36 M USD</div>`)[0];
+                popup_e6b430a3aa2d1082597e0ec40b0fb5c8.setContent(html_b3fd140355a31262f959b61b6fbddb7c);
+            
+        
+
+        marker_b830902415bbc053bf8b9a897a5ba5f5.bindPopup(popup_e6b430a3aa2d1082597e0ec40b0fb5c8)
+        ;
+
+        
+    
+    
+            var marker_e1199c2dfb69a28f3df16711510c0f41 = L.marker(
+                [36.0, 138.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_758a223b44e1107c9a10472db8070a39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1199c2dfb69a28f3df16711510c0f41.setIcon(icon_758a223b44e1107c9a10472db8070a39);
+        
+    
+        var popup_695e1fce4d552008d33fcc5d01a0b713 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_352415e0af889fbeb2ba1b072d61dc80 = $(`<div id="html_352415e0af889fbeb2ba1b072d61dc80" style="width: 100.0%; height: 100.0%;">Japan: 15.29 B USD</div>`)[0];
+                popup_695e1fce4d552008d33fcc5d01a0b713.setContent(html_352415e0af889fbeb2ba1b072d61dc80);
+            
+        
+
+        marker_e1199c2dfb69a28f3df16711510c0f41.bindPopup(popup_695e1fce4d552008d33fcc5d01a0b713)
+        ;
+
+        
+    
+    
+            var marker_08cafaac18c4aaa43c5842b81dbb6e86 = L.marker(
+                [31.0, 36.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_5de279fe977649bcd157536a91ddf80d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08cafaac18c4aaa43c5842b81dbb6e86.setIcon(icon_5de279fe977649bcd157536a91ddf80d);
+        
+    
+        var popup_8d7cfae54284a225da123dc726ffe9fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab69b07b714f5b88c7a565db66aa27af = $(`<div id="html_ab69b07b714f5b88c7a565db66aa27af" style="width: 100.0%; height: 100.0%;">Jordan: 156.07 M USD</div>`)[0];
+                popup_8d7cfae54284a225da123dc726ffe9fd.setContent(html_ab69b07b714f5b88c7a565db66aa27af);
+            
+        
+
+        marker_08cafaac18c4aaa43c5842b81dbb6e86.bindPopup(popup_8d7cfae54284a225da123dc726ffe9fd)
+        ;
+
+        
+    
+    
+            var marker_82abcd8ca826e6238a935551c1164849 = L.marker(
+                [48.0, 68.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_4c2946343c93aa6695452adb08f74b5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82abcd8ca826e6238a935551c1164849.setIcon(icon_4c2946343c93aa6695452adb08f74b5c);
+        
+    
+        var popup_0a564eb56ad7689b7981174169fdde2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d1dbc075f8e18acff176f31cf03bcca = $(`<div id="html_8d1dbc075f8e18acff176f31cf03bcca" style="width: 100.0%; height: 100.0%;">Kazakhstan: 447.78 M USD</div>`)[0];
+                popup_0a564eb56ad7689b7981174169fdde2c.setContent(html_8d1dbc075f8e18acff176f31cf03bcca);
+            
+        
+
+        marker_82abcd8ca826e6238a935551c1164849.bindPopup(popup_0a564eb56ad7689b7981174169fdde2c)
+        ;
+
+        
+    
+    
+            var marker_9b4ce60c2461f4386c23f3e041b5d1a0 = L.marker(
+                [1.0, 38.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_11f0f3c8727e4aa3cf488c26033bc97b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b4ce60c2461f4386c23f3e041b5d1a0.setIcon(icon_11f0f3c8727e4aa3cf488c26033bc97b);
+        
+    
+        var popup_3563f7c3ff471d37f185cdf4b8461cf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ecb03c63d9ba0a6e5c1bf6f2b5adb21 = $(`<div id="html_0ecb03c63d9ba0a6e5c1bf6f2b5adb21" style="width: 100.0%; height: 100.0%;">Kenya: 34.34 M USD</div>`)[0];
+                popup_3563f7c3ff471d37f185cdf4b8461cf2.setContent(html_0ecb03c63d9ba0a6e5c1bf6f2b5adb21);
+            
+        
+
+        marker_9b4ce60c2461f4386c23f3e041b5d1a0.bindPopup(popup_3563f7c3ff471d37f185cdf4b8461cf2)
+        ;
+
+        
+    
+    
+            var marker_6c51336708185a7325c8230f971cfd17 = L.marker(
+                [1.41666666, 173.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_94acbe6591ed4d5b39cffcc9026f6cf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c51336708185a7325c8230f971cfd17.setIcon(icon_94acbe6591ed4d5b39cffcc9026f6cf1);
+        
+    
+        var popup_500e64f4b7c212268fa704bdd6114bec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27cb9ffaa53afbac8c421ed28eaed062 = $(`<div id="html_27cb9ffaa53afbac8c421ed28eaed062" style="width: 100.0%; height: 100.0%;">Kiribati: 0.34 M USD</div>`)[0];
+                popup_500e64f4b7c212268fa704bdd6114bec.setContent(html_27cb9ffaa53afbac8c421ed28eaed062);
+            
+        
+
+        marker_6c51336708185a7325c8230f971cfd17.bindPopup(popup_500e64f4b7c212268fa704bdd6114bec)
+        ;
+
+        
+    
+    
+            var marker_993815761edd945d519352303b1d6787 = L.marker(
+                [29.5, 45.75],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_3dae8530fb25742ceebdccf3bffaf4a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_993815761edd945d519352303b1d6787.setIcon(icon_3dae8530fb25742ceebdccf3bffaf4a3);
+        
+    
+        var popup_9cc834bcb868b59e71a36091228c9703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebd647362994d08e9ccc7780517e81c8 = $(`<div id="html_ebd647362994d08e9ccc7780517e81c8" style="width: 100.0%; height: 100.0%;">Kuwait: 309.30 M USD</div>`)[0];
+                popup_9cc834bcb868b59e71a36091228c9703.setContent(html_ebd647362994d08e9ccc7780517e81c8);
+            
+        
+
+        marker_993815761edd945d519352303b1d6787.bindPopup(popup_9cc834bcb868b59e71a36091228c9703)
+        ;
+
+        
+    
+    
+            var marker_495db475df88187695602fea15ad3174 = L.marker(
+                [41.0, 75.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_13459df0008ee6cc1472d9f90c4855ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_495db475df88187695602fea15ad3174.setIcon(icon_13459df0008ee6cc1472d9f90c4855ba);
+        
+    
+        var popup_e88f1dbc7519b724732e6c2d8c7bebc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de6d5623cdd2595a8e3dac60bd67e2ff = $(`<div id="html_de6d5623cdd2595a8e3dac60bd67e2ff" style="width: 100.0%; height: 100.0%;">Kyrgyzstan: 0.27 M USD</div>`)[0];
+                popup_e88f1dbc7519b724732e6c2d8c7bebc3.setContent(html_de6d5623cdd2595a8e3dac60bd67e2ff);
+            
+        
+
+        marker_495db475df88187695602fea15ad3174.bindPopup(popup_e88f1dbc7519b724732e6c2d8c7bebc3)
+        ;
+
+        
+    
+    
+            var marker_81e37c96cf86a019595a685f829d946a = L.marker(
+                [57.0, 25.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_a39ae5ee3c669b84f85a566cffc8aac6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81e37c96cf86a019595a685f829d946a.setIcon(icon_a39ae5ee3c669b84f85a566cffc8aac6);
+        
+    
+        var popup_f6d92c5e262df4f49671c60f98706329 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fb038b14f032c11cdd51d5d3f5691b5 = $(`<div id="html_4fb038b14f032c11cdd51d5d3f5691b5" style="width: 100.0%; height: 100.0%;">Latvia: 96.63 M USD</div>`)[0];
+                popup_f6d92c5e262df4f49671c60f98706329.setContent(html_4fb038b14f032c11cdd51d5d3f5691b5);
+            
+        
+
+        marker_81e37c96cf86a019595a685f829d946a.bindPopup(popup_f6d92c5e262df4f49671c60f98706329)
+        ;
+
+        
+    
+    
+            var marker_6137dfa10438ccf6050e5c3c49b2bb5b = L.marker(
+                [33.83333333, 35.83333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_fa798060ac0a67d2181ef51d058e0129 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6137dfa10438ccf6050e5c3c49b2bb5b.setIcon(icon_fa798060ac0a67d2181ef51d058e0129);
+        
+    
+        var popup_b980f4eaa132d740831ebba7d7448747 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab10674a1fb36caafb50602a54449147 = $(`<div id="html_ab10674a1fb36caafb50602a54449147" style="width: 100.0%; height: 100.0%;">Lebanon: 36.87 M USD</div>`)[0];
+                popup_b980f4eaa132d740831ebba7d7448747.setContent(html_ab10674a1fb36caafb50602a54449147);
+            
+        
+
+        marker_6137dfa10438ccf6050e5c3c49b2bb5b.bindPopup(popup_b980f4eaa132d740831ebba7d7448747)
+        ;
+
+        
+    
+    
+            var marker_66ecccae3e05d5d7000d206de77d86b0 = L.marker(
+                [-29.5, 28.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_9307bd47f089cda50625ca23662ec514 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_66ecccae3e05d5d7000d206de77d86b0.setIcon(icon_9307bd47f089cda50625ca23662ec514);
+        
+    
+        var popup_8e332bae23a45d69555266b7fcc3951e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccfc48ae136bbc76cd5df84122dcab1b = $(`<div id="html_ccfc48ae136bbc76cd5df84122dcab1b" style="width: 100.0%; height: 100.0%;">Lesotho: 7.91 M USD</div>`)[0];
+                popup_8e332bae23a45d69555266b7fcc3951e.setContent(html_ccfc48ae136bbc76cd5df84122dcab1b);
+            
+        
+
+        marker_66ecccae3e05d5d7000d206de77d86b0.bindPopup(popup_8e332bae23a45d69555266b7fcc3951e)
+        ;
+
+        
+    
+    
+            var marker_61f93c1c310d1d037bf7d8aa58e6d1c4 = L.marker(
+                [6.5, -9.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_065be792e65cdd941504d2ea97a0c02e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61f93c1c310d1d037bf7d8aa58e6d1c4.setIcon(icon_065be792e65cdd941504d2ea97a0c02e);
+        
+    
+        var popup_e5a864fa36ce9d90820a0629fb0efefc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66ba076b0f10069da418ab2823271eff = $(`<div id="html_66ba076b0f10069da418ab2823271eff" style="width: 100.0%; height: 100.0%;">Liberia: 27.61 M USD</div>`)[0];
+                popup_e5a864fa36ce9d90820a0629fb0efefc.setContent(html_66ba076b0f10069da418ab2823271eff);
+            
+        
+
+        marker_61f93c1c310d1d037bf7d8aa58e6d1c4.bindPopup(popup_e5a864fa36ce9d90820a0629fb0efefc)
+        ;
+
+        
+    
+    
+            var marker_aabd35a77ae8602ad4ce707b0df1f82c = L.marker(
+                [25.0, 17.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ba4c722a8626b86f60e903a55d5d7212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aabd35a77ae8602ad4ce707b0df1f82c.setIcon(icon_ba4c722a8626b86f60e903a55d5d7212);
+        
+    
+        var popup_1f9fa12f1d6979d50ee0530f0bffd0de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f50bc66da6d98714448054cc8862527f = $(`<div id="html_f50bc66da6d98714448054cc8862527f" style="width: 100.0%; height: 100.0%;">Libya: 0.11 M USD</div>`)[0];
+                popup_1f9fa12f1d6979d50ee0530f0bffd0de.setContent(html_f50bc66da6d98714448054cc8862527f);
+            
+        
+
+        marker_aabd35a77ae8602ad4ce707b0df1f82c.bindPopup(popup_1f9fa12f1d6979d50ee0530f0bffd0de)
+        ;
+
+        
+    
+    
+            var marker_ec0bb6a7280c0440bbdb1feaaf3c6a79 = L.marker(
+                [56.0, 24.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_31f745c7046c794bbf9677a2c0c6f4ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ec0bb6a7280c0440bbdb1feaaf3c6a79.setIcon(icon_31f745c7046c794bbf9677a2c0c6f4ce);
+        
+    
+        var popup_9d009e4dc9bff2fe7c7c89bcbec68a91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_377c340f610ea30fd3cda97b56175efd = $(`<div id="html_377c340f610ea30fd3cda97b56175efd" style="width: 100.0%; height: 100.0%;">Lithuania: 197.75 M USD</div>`)[0];
+                popup_9d009e4dc9bff2fe7c7c89bcbec68a91.setContent(html_377c340f610ea30fd3cda97b56175efd);
+            
+        
+
+        marker_ec0bb6a7280c0440bbdb1feaaf3c6a79.bindPopup(popup_9d009e4dc9bff2fe7c7c89bcbec68a91)
+        ;
+
+        
+    
+    
+            var marker_df01dc9c2d520dd16ea5f7704a51473e = L.marker(
+                [49.75, 6.16666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_368c1806791abd0180e404302baeb417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_df01dc9c2d520dd16ea5f7704a51473e.setIcon(icon_368c1806791abd0180e404302baeb417);
+        
+    
+        var popup_6da3207ec7b60b8ddf5e172d26fb918c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_935fbfc94d9a29b68db727451de60291 = $(`<div id="html_935fbfc94d9a29b68db727451de60291" style="width: 100.0%; height: 100.0%;">Luxembourg: 140.99 M USD</div>`)[0];
+                popup_6da3207ec7b60b8ddf5e172d26fb918c.setContent(html_935fbfc94d9a29b68db727451de60291);
+            
+        
+
+        marker_df01dc9c2d520dd16ea5f7704a51473e.bindPopup(popup_6da3207ec7b60b8ddf5e172d26fb918c)
+        ;
+
+        
+    
+    
+            var marker_233663f8f6c3852c9cb74649e499a4d1 = L.marker(
+                [-20.0, 47.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_292113899e3a8a0bce4f6b3435f64560 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_233663f8f6c3852c9cb74649e499a4d1.setIcon(icon_292113899e3a8a0bce4f6b3435f64560);
+        
+    
+        var popup_e31fa14808ca6f81d03dca02e26829ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c25dce14c8c7b6f3073065ea8f812dd = $(`<div id="html_2c25dce14c8c7b6f3073065ea8f812dd" style="width: 100.0%; height: 100.0%;">Madagascar: 129.70 M USD</div>`)[0];
+                popup_e31fa14808ca6f81d03dca02e26829ed.setContent(html_2c25dce14c8c7b6f3073065ea8f812dd);
+            
+        
+
+        marker_233663f8f6c3852c9cb74649e499a4d1.bindPopup(popup_e31fa14808ca6f81d03dca02e26829ed)
+        ;
+
+        
+    
+    
+            var marker_69d4a65e9bacccd557f39b131832c73a = L.marker(
+                [-13.5, 34.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ee2b7864c58ef9efaa62c33b604bb422 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69d4a65e9bacccd557f39b131832c73a.setIcon(icon_ee2b7864c58ef9efaa62c33b604bb422);
+        
+    
+        var popup_dbd1ed7cb74aff01b4e397dba6d74cd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb600c04bc479ace4aa9fdc335a26a25 = $(`<div id="html_cb600c04bc479ace4aa9fdc335a26a25" style="width: 100.0%; height: 100.0%;">Malawi: 1.50 M USD</div>`)[0];
+                popup_dbd1ed7cb74aff01b4e397dba6d74cd4.setContent(html_cb600c04bc479ace4aa9fdc335a26a25);
+            
+        
+
+        marker_69d4a65e9bacccd557f39b131832c73a.bindPopup(popup_dbd1ed7cb74aff01b4e397dba6d74cd4)
+        ;
+
+        
+    
+    
+            var marker_70aac084d1528762160889cc320bb30d = L.marker(
+                [2.5, 112.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_110addfc58d620ebe7dc853eebf07818 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70aac084d1528762160889cc320bb30d.setIcon(icon_110addfc58d620ebe7dc853eebf07818);
+        
+    
+        var popup_79687e315270dd715c90fa159f661d77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84fee399b91a5f58d8df52f164c0d97f = $(`<div id="html_84fee399b91a5f58d8df52f164c0d97f" style="width: 100.0%; height: 100.0%;">Malaysia: 2.57 B USD</div>`)[0];
+                popup_79687e315270dd715c90fa159f661d77.setContent(html_84fee399b91a5f58d8df52f164c0d97f);
+            
+        
+
+        marker_70aac084d1528762160889cc320bb30d.bindPopup(popup_79687e315270dd715c90fa159f661d77)
+        ;
+
+        
+    
+    
+            var marker_2956ea18e7e1569ef0c9240914f91187 = L.marker(
+                [3.25, 73.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_cba1b1889cd52e3de986522f8861c1f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2956ea18e7e1569ef0c9240914f91187.setIcon(icon_cba1b1889cd52e3de986522f8861c1f3);
+        
+    
+        var popup_2131b901dc2191dab5b752022ab8b99b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c98c32640b9d1fb123e2ea451b79ba68 = $(`<div id="html_c98c32640b9d1fb123e2ea451b79ba68" style="width: 100.0%; height: 100.0%;">Maldives: 0.43 M USD</div>`)[0];
+                popup_2131b901dc2191dab5b752022ab8b99b.setContent(html_c98c32640b9d1fb123e2ea451b79ba68);
+            
+        
+
+        marker_2956ea18e7e1569ef0c9240914f91187.bindPopup(popup_2131b901dc2191dab5b752022ab8b99b)
+        ;
+
+        
+    
+    
+            var marker_aee7e2402e5e054c98cb04fab0029995 = L.marker(
+                [17.0, -4.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_6cae8e033481d492997957776b251296 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aee7e2402e5e054c98cb04fab0029995.setIcon(icon_6cae8e033481d492997957776b251296);
+        
+    
+        var popup_022c3e58a2e612e6a72c22304d85353b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c38864263168c0c5dc94fad445636b6 = $(`<div id="html_9c38864263168c0c5dc94fad445636b6" style="width: 100.0%; height: 100.0%;">Mali: 4.28 M USD</div>`)[0];
+                popup_022c3e58a2e612e6a72c22304d85353b.setContent(html_9c38864263168c0c5dc94fad445636b6);
+            
+        
+
+        marker_aee7e2402e5e054c98cb04fab0029995.bindPopup(popup_022c3e58a2e612e6a72c22304d85353b)
+        ;
+
+        
+    
+    
+            var marker_c77f7b44da3ffab849a9ad82c4164fc3 = L.marker(
+                [35.83333333, 14.58333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_991042bc18502a67d1a27b68cf93c054 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c77f7b44da3ffab849a9ad82c4164fc3.setIcon(icon_991042bc18502a67d1a27b68cf93c054);
+        
+    
+        var popup_e041c0fc467f338f1aabad9652936292 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0bb93fb9b985ef127d0e9a703f06b13 = $(`<div id="html_c0bb93fb9b985ef127d0e9a703f06b13" style="width: 100.0%; height: 100.0%;">Malta: 35.12 M USD</div>`)[0];
+                popup_e041c0fc467f338f1aabad9652936292.setContent(html_c0bb93fb9b985ef127d0e9a703f06b13);
+            
+        
+
+        marker_c77f7b44da3ffab849a9ad82c4164fc3.bindPopup(popup_e041c0fc467f338f1aabad9652936292)
+        ;
+
+        
+    
+    
+            var marker_415f50f00dd0ef81b6590c2cabb5f265 = L.marker(
+                [20.0, -12.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ce88b08d728ffd8294967254bdc6aaee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_415f50f00dd0ef81b6590c2cabb5f265.setIcon(icon_ce88b08d728ffd8294967254bdc6aaee);
+        
+    
+        var popup_eb069ee3ab39d78d98d1cf6b80288926 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec0c838ed4c17f60284fbc9e1a034bd5 = $(`<div id="html_ec0c838ed4c17f60284fbc9e1a034bd5" style="width: 100.0%; height: 100.0%;">Mauritania: 590.26 M USD</div>`)[0];
+                popup_eb069ee3ab39d78d98d1cf6b80288926.setContent(html_ec0c838ed4c17f60284fbc9e1a034bd5);
+            
+        
+
+        marker_415f50f00dd0ef81b6590c2cabb5f265.bindPopup(popup_eb069ee3ab39d78d98d1cf6b80288926)
+        ;
+
+        
+    
+    
+            var marker_01b852ca1bfc47b13f5ab6e75f5eb610 = L.marker(
+                [-20.28333333, 57.55],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_8e09991e149764433c5aa637296abd6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01b852ca1bfc47b13f5ab6e75f5eb610.setIcon(icon_8e09991e149764433c5aa637296abd6a);
+        
+    
+        var popup_8a24853cede8350e001f49d600e15198 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbfdd127d9f5b6a920d8d573b954ecde = $(`<div id="html_fbfdd127d9f5b6a920d8d573b954ecde" style="width: 100.0%; height: 100.0%;">Mauritius: 17.86 M USD</div>`)[0];
+                popup_8a24853cede8350e001f49d600e15198.setContent(html_fbfdd127d9f5b6a920d8d573b954ecde);
+            
+        
+
+        marker_01b852ca1bfc47b13f5ab6e75f5eb610.bindPopup(popup_8a24853cede8350e001f49d600e15198)
+        ;
+
+        
+    
+    
+            var marker_603afedb8b873fbb00514b420e8e0d90 = L.marker(
+                [23.0, -102.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_e15c9f96bcdb273df3f6690d9163a47f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_603afedb8b873fbb00514b420e8e0d90.setIcon(icon_e15c9f96bcdb273df3f6690d9163a47f);
+        
+    
+        var popup_3d0dc896f9eac7f4c86d1189c7d235f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91097df1a93afc0154089ed0b161a19e = $(`<div id="html_91097df1a93afc0154089ed0b161a19e" style="width: 100.0%; height: 100.0%;">Mexico: 34.06 B USD</div>`)[0];
+                popup_3d0dc896f9eac7f4c86d1189c7d235f2.setContent(html_91097df1a93afc0154089ed0b161a19e);
+            
+        
+
+        marker_603afedb8b873fbb00514b420e8e0d90.bindPopup(popup_3d0dc896f9eac7f4c86d1189c7d235f2)
+        ;
+
+        
+    
+    
+            var marker_87bc71fb88138d8af6b528c0228a47cb = L.marker(
+                [46.0, 105.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_f42ae1ed4a4911ff8cb4333633be2ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87bc71fb88138d8af6b528c0228a47cb.setIcon(icon_f42ae1ed4a4911ff8cb4333633be2ec6);
+        
+    
+        var popup_c4cb0516ce563921ba2816aa280b4044 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ee519a978e11439365ad4c08029525e = $(`<div id="html_4ee519a978e11439365ad4c08029525e" style="width: 100.0%; height: 100.0%;">Mongolia: 2.29 M USD</div>`)[0];
+                popup_c4cb0516ce563921ba2816aa280b4044.setContent(html_4ee519a978e11439365ad4c08029525e);
+            
+        
+
+        marker_87bc71fb88138d8af6b528c0228a47cb.bindPopup(popup_c4cb0516ce563921ba2816aa280b4044)
+        ;
+
+        
+    
+    
+            var marker_6f48aba2b78c837b95de059d5e2033a8 = L.marker(
+                [16.75, -62.2],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_dcc9ba0cedcb35d1d6130780390eb195 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f48aba2b78c837b95de059d5e2033a8.setIcon(icon_dcc9ba0cedcb35d1d6130780390eb195);
+        
+    
+        var popup_52643b7ab24971befcb57bae9eddc90f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9667b5daab7819c80de84f87c0a92b58 = $(`<div id="html_9667b5daab7819c80de84f87c0a92b58" style="width: 100.0%; height: 100.0%;">Montserrat: 0.12 M USD</div>`)[0];
+                popup_52643b7ab24971befcb57bae9eddc90f.setContent(html_9667b5daab7819c80de84f87c0a92b58);
+            
+        
+
+        marker_6f48aba2b78c837b95de059d5e2033a8.bindPopup(popup_52643b7ab24971befcb57bae9eddc90f)
+        ;
+
+        
+    
+    
+            var marker_97e905392cbcc6554f1b36689fa036c3 = L.marker(
+                [32.0, -5.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2f3603dcc7a8bfdb5d80b72faa4139e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97e905392cbcc6554f1b36689fa036c3.setIcon(icon_2f3603dcc7a8bfdb5d80b72faa4139e4);
+        
+    
+        var popup_6426db757035af4adcc53edc5add5783 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10776e9e6ed3db7bdf6f29f2d4d232ca = $(`<div id="html_10776e9e6ed3db7bdf6f29f2d4d232ca" style="width: 100.0%; height: 100.0%;">Morocco: 576.39 M USD</div>`)[0];
+                popup_6426db757035af4adcc53edc5add5783.setContent(html_10776e9e6ed3db7bdf6f29f2d4d232ca);
+            
+        
+
+        marker_97e905392cbcc6554f1b36689fa036c3.bindPopup(popup_6426db757035af4adcc53edc5add5783)
+        ;
+
+        
+    
+    
+            var marker_489f57a711a374d3dfc25bd5311402fd = L.marker(
+                [-18.25, 35.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_a9e293b3ea6cb08ac7c6c4d39c50cac8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_489f57a711a374d3dfc25bd5311402fd.setIcon(icon_a9e293b3ea6cb08ac7c6c4d39c50cac8);
+        
+    
+        var popup_99f5cb4e8f8ffda50a373bce8a8fd749 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9da7775b68f685212b32cec6adb3d078 = $(`<div id="html_9da7775b68f685212b32cec6adb3d078" style="width: 100.0%; height: 100.0%;">Mozambique: 22.14 M USD</div>`)[0];
+                popup_99f5cb4e8f8ffda50a373bce8a8fd749.setContent(html_9da7775b68f685212b32cec6adb3d078);
+            
+        
+
+        marker_489f57a711a374d3dfc25bd5311402fd.bindPopup(popup_99f5cb4e8f8ffda50a373bce8a8fd749)
+        ;
+
+        
+    
+    
+            var marker_010acde0fb227761a1071c3325412491 = L.marker(
+                [-22.0, 17.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_f2e601f0f0e38cc27686d67ef95082df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_010acde0fb227761a1071c3325412491.setIcon(icon_f2e601f0f0e38cc27686d67ef95082df);
+        
+    
+        var popup_9fa9d8a915d7fe48b2e201e052869a1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ddbd639b52b401d1272f3879f343480 = $(`<div id="html_1ddbd639b52b401d1272f3879f343480" style="width: 100.0%; height: 100.0%;">Namibia: 109.08 M USD</div>`)[0];
+                popup_9fa9d8a915d7fe48b2e201e052869a1c.setContent(html_1ddbd639b52b401d1272f3879f343480);
+            
+        
+
+        marker_010acde0fb227761a1071c3325412491.bindPopup(popup_9fa9d8a915d7fe48b2e201e052869a1c)
+        ;
+
+        
+    
+    
+            var marker_0eaaae4ad32b29d9ba3e11d840a3e091 = L.marker(
+                [-0.53333333, 166.91666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2ab56336cfef557d61c392a0ede6ac61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0eaaae4ad32b29d9ba3e11d840a3e091.setIcon(icon_2ab56336cfef557d61c392a0ede6ac61);
+        
+    
+        var popup_9f4b028630bfdae5b9e1a963d66d1769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a6c3c625cab7a2a222933c792447745 = $(`<div id="html_9a6c3c625cab7a2a222933c792447745" style="width: 100.0%; height: 100.0%;">Nauru: 1.61 M USD</div>`)[0];
+                popup_9f4b028630bfdae5b9e1a963d66d1769.setContent(html_9a6c3c625cab7a2a222933c792447745);
+            
+        
+
+        marker_0eaaae4ad32b29d9ba3e11d840a3e091.bindPopup(popup_9f4b028630bfdae5b9e1a963d66d1769)
+        ;
+
+        
+    
+    
+            var marker_e15a7f17d38c4025732f4a713f5bff7b = L.marker(
+                [28.0, 84.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_023c40421a9fd66e933e5e1b826909f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e15a7f17d38c4025732f4a713f5bff7b.setIcon(icon_023c40421a9fd66e933e5e1b826909f8);
+        
+    
+        var popup_ee1d376ae5f1f0c66ec43e7a28adff5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc89f1874d2d2d62054939bc44c35924 = $(`<div id="html_bc89f1874d2d2d62054939bc44c35924" style="width: 100.0%; height: 100.0%;">Nepal: 11.23 M USD</div>`)[0];
+                popup_ee1d376ae5f1f0c66ec43e7a28adff5a.setContent(html_bc89f1874d2d2d62054939bc44c35924);
+            
+        
+
+        marker_e15a7f17d38c4025732f4a713f5bff7b.bindPopup(popup_ee1d376ae5f1f0c66ec43e7a28adff5a)
+        ;
+
+        
+    
+    
+            var marker_0ba030335330aad47caf3af2e31e2955 = L.marker(
+                [52.5, 5.75],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_c1d7098f1835a47c3dadc9b242ac5167 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ba030335330aad47caf3af2e31e2955.setIcon(icon_c1d7098f1835a47c3dadc9b242ac5167);
+        
+    
+        var popup_227c888daaaf111fc0069d3b1f1a92b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb9dfcecebc7fba655bd326905e9d3c6 = $(`<div id="html_eb9dfcecebc7fba655bd326905e9d3c6" style="width: 100.0%; height: 100.0%;">Netherlands: 3.23 B USD</div>`)[0];
+                popup_227c888daaaf111fc0069d3b1f1a92b6.setContent(html_eb9dfcecebc7fba655bd326905e9d3c6);
+            
+        
+
+        marker_0ba030335330aad47caf3af2e31e2955.bindPopup(popup_227c888daaaf111fc0069d3b1f1a92b6)
+        ;
+
+        
+    
+    
+            var marker_8b24dd33afc374a32c75c4980db35955 = L.marker(
+                [-21.5, 165.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_947b0c104160d150c551737d3f6030e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b24dd33afc374a32c75c4980db35955.setIcon(icon_947b0c104160d150c551737d3f6030e1);
+        
+    
+        var popup_35f7302aa4b2d4bce649cb7d0d69fd73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_505d6220236a76c3ce1a9a85ffb3224a = $(`<div id="html_505d6220236a76c3ce1a9a85ffb3224a" style="width: 100.0%; height: 100.0%;">New Caledonia: 24.05 M USD</div>`)[0];
+                popup_35f7302aa4b2d4bce649cb7d0d69fd73.setContent(html_505d6220236a76c3ce1a9a85ffb3224a);
+            
+        
+
+        marker_8b24dd33afc374a32c75c4980db35955.bindPopup(popup_35f7302aa4b2d4bce649cb7d0d69fd73)
+        ;
+
+        
+    
+    
+            var marker_b0b7dcfd8a9110b878b27be40322edef = L.marker(
+                [-41.0, 174.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_209a082a30e1f945519cd7d658ac0c7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b0b7dcfd8a9110b878b27be40322edef.setIcon(icon_209a082a30e1f945519cd7d658ac0c7a);
+        
+    
+        var popup_a226988d2366c552af093373db2978b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0d16a42200d0c688913470115037fed = $(`<div id="html_a0d16a42200d0c688913470115037fed" style="width: 100.0%; height: 100.0%;">New Zealand: 741.89 M USD</div>`)[0];
+                popup_a226988d2366c552af093373db2978b2.setContent(html_a0d16a42200d0c688913470115037fed);
+            
+        
+
+        marker_b0b7dcfd8a9110b878b27be40322edef.bindPopup(popup_a226988d2366c552af093373db2978b2)
+        ;
+
+        
+    
+    
+            var marker_1b08d7e7f21969944686aa108a00d349 = L.marker(
+                [13.0, -85.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ec4413e096fdbb744293bc86493e4f44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b08d7e7f21969944686aa108a00d349.setIcon(icon_ec4413e096fdbb744293bc86493e4f44);
+        
+    
+        var popup_1726771a9d5cca155dbc80ef17322fe5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d35c6f0d649c65df9b03125620066cc = $(`<div id="html_0d35c6f0d649c65df9b03125620066cc" style="width: 100.0%; height: 100.0%;">Nicaragua: 497.79 M USD</div>`)[0];
+                popup_1726771a9d5cca155dbc80ef17322fe5.setContent(html_0d35c6f0d649c65df9b03125620066cc);
+            
+        
+
+        marker_1b08d7e7f21969944686aa108a00d349.bindPopup(popup_1726771a9d5cca155dbc80ef17322fe5)
+        ;
+
+        
+    
+    
+            var marker_fbc9494194f23eb9a2bce6b2943e0b1d = L.marker(
+                [16.0, 8.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_88c6e4090966c98f8b130e248f2ee3bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fbc9494194f23eb9a2bce6b2943e0b1d.setIcon(icon_88c6e4090966c98f8b130e248f2ee3bf);
+        
+    
+        var popup_85999a246a2e5d8c53da0299dae97f8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6503a5c0f6c0fe80d46f097e8681b5b3 = $(`<div id="html_6503a5c0f6c0fe80d46f097e8681b5b3" style="width: 100.0%; height: 100.0%;">Niger: 2.56 M USD</div>`)[0];
+                popup_85999a246a2e5d8c53da0299dae97f8e.setContent(html_6503a5c0f6c0fe80d46f097e8681b5b3);
+            
+        
+
+        marker_fbc9494194f23eb9a2bce6b2943e0b1d.bindPopup(popup_85999a246a2e5d8c53da0299dae97f8e)
+        ;
+
+        
+    
+    
+            var marker_dfadd8bdd01a71fa78a70aeb046fcb70 = L.marker(
+                [10.0, 8.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_dc792cec1408a94a022fdda543b5a5ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dfadd8bdd01a71fa78a70aeb046fcb70.setIcon(icon_dc792cec1408a94a022fdda543b5a5ec);
+        
+    
+        var popup_934a16f8767122d559adef90bfb16744 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b6a834dfa4629ee4ea55dee7c61431c = $(`<div id="html_1b6a834dfa4629ee4ea55dee7c61431c" style="width: 100.0%; height: 100.0%;">Nigeria: 2.22 B USD</div>`)[0];
+                popup_934a16f8767122d559adef90bfb16744.setContent(html_1b6a834dfa4629ee4ea55dee7c61431c);
+            
+        
+
+        marker_dfadd8bdd01a71fa78a70aeb046fcb70.bindPopup(popup_934a16f8767122d559adef90bfb16744)
+        ;
+
+        
+    
+    
+            var marker_1392ee339c231e03f588e7dac20647e3 = L.marker(
+                [-19.03333333, -169.86666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_9941ede8c6a59d79593149af1cb9fd2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1392ee339c231e03f588e7dac20647e3.setIcon(icon_9941ede8c6a59d79593149af1cb9fd2e);
+        
+    
+        var popup_14838d8e317de888014a43a6e75a7507 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97e850681c2a282ce64fb2a632c9b3b3 = $(`<div id="html_97e850681c2a282ce64fb2a632c9b3b3" style="width: 100.0%; height: 100.0%;">Niue: 0.29 M USD</div>`)[0];
+                popup_14838d8e317de888014a43a6e75a7507.setContent(html_97e850681c2a282ce64fb2a632c9b3b3);
+            
+        
+
+        marker_1392ee339c231e03f588e7dac20647e3.bindPopup(popup_14838d8e317de888014a43a6e75a7507)
+        ;
+
+        
+    
+    
+            var marker_6c2e7f12fd3e058cf045a35535551f90 = L.marker(
+                [62.0, 10.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_d96c9456514ff0811ee7554a5d03da1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c2e7f12fd3e058cf045a35535551f90.setIcon(icon_d96c9456514ff0811ee7554a5d03da1b);
+        
+    
+        var popup_695746c4aa784bcdd5b3e66d4aa11f51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2d59ebc6e7cd9c5752f761f33dbcbcf = $(`<div id="html_a2d59ebc6e7cd9c5752f761f33dbcbcf" style="width: 100.0%; height: 100.0%;">Norway: 580.20 M USD</div>`)[0];
+                popup_695746c4aa784bcdd5b3e66d4aa11f51.setContent(html_a2d59ebc6e7cd9c5752f761f33dbcbcf);
+            
+        
+
+        marker_6c2e7f12fd3e058cf045a35535551f90.bindPopup(popup_695746c4aa784bcdd5b3e66d4aa11f51)
+        ;
+
+        
+    
+    
+            var marker_4f55779eb2fc2e22413ab47241e23274 = L.marker(
+                [21.0, 57.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_675ea2819199cc58ae72d6306c8bb674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f55779eb2fc2e22413ab47241e23274.setIcon(icon_675ea2819199cc58ae72d6306c8bb674);
+        
+    
+        var popup_c2048defbd1faf4a07aab49ee7177441 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b942df2aa76c5cdbd71f2d0ec5a4ef21 = $(`<div id="html_b942df2aa76c5cdbd71f2d0ec5a4ef21" style="width: 100.0%; height: 100.0%;">Oman: 82.62 M USD</div>`)[0];
+                popup_c2048defbd1faf4a07aab49ee7177441.setContent(html_b942df2aa76c5cdbd71f2d0ec5a4ef21);
+            
+        
+
+        marker_4f55779eb2fc2e22413ab47241e23274.bindPopup(popup_c2048defbd1faf4a07aab49ee7177441)
+        ;
+
+        
+    
+    
+            var marker_ee4ce8d3f86cfa3308aba288b19c0253 = L.marker(
+                [30.0, 70.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_9682c2a8e96b50cb4133cbdaaf6cc7d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee4ce8d3f86cfa3308aba288b19c0253.setIcon(icon_9682c2a8e96b50cb4133cbdaaf6cc7d0);
+        
+    
+        var popup_8a4fdbbb38b4b3d8c85599d6936b4a74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1163443eab817d06e4ac6168efba942 = $(`<div id="html_d1163443eab817d06e4ac6168efba942" style="width: 100.0%; height: 100.0%;">Pakistan: 456.77 M USD</div>`)[0];
+                popup_8a4fdbbb38b4b3d8c85599d6936b4a74.setContent(html_d1163443eab817d06e4ac6168efba942);
+            
+        
+
+        marker_ee4ce8d3f86cfa3308aba288b19c0253.bindPopup(popup_8a4fdbbb38b4b3d8c85599d6936b4a74)
+        ;
+
+        
+    
+    
+            var marker_b1c100deb3dd3f07370498f1e974ddff = L.marker(
+                [9.0, -80.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_0acb1e7ee429ef3174bd402e956b9145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1c100deb3dd3f07370498f1e974ddff.setIcon(icon_0acb1e7ee429ef3174bd402e956b9145);
+        
+    
+        var popup_a73fe8b62910f323537380eb00213351 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23717982584e879234f092e73d8dedbd = $(`<div id="html_23717982584e879234f092e73d8dedbd" style="width: 100.0%; height: 100.0%;">Panama: 20.39 M USD</div>`)[0];
+                popup_a73fe8b62910f323537380eb00213351.setContent(html_23717982584e879234f092e73d8dedbd);
+            
+        
+
+        marker_b1c100deb3dd3f07370498f1e974ddff.bindPopup(popup_a73fe8b62910f323537380eb00213351)
+        ;
+
+        
+    
+    
+            var marker_be71c9a279c013b60bdc0161ee29340d = L.marker(
+                [-6.0, 147.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_904df3ea15abf7a545f73d1804832683 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be71c9a279c013b60bdc0161ee29340d.setIcon(icon_904df3ea15abf7a545f73d1804832683);
+        
+    
+        var popup_d837a19c050988f76288897a3262a455 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbc404c3133a4c3adc461b39fc11f92f = $(`<div id="html_dbc404c3133a4c3adc461b39fc11f92f" style="width: 100.0%; height: 100.0%;">Papua New Guinea: 3.40 M USD</div>`)[0];
+                popup_d837a19c050988f76288897a3262a455.setContent(html_dbc404c3133a4c3adc461b39fc11f92f);
+            
+        
+
+        marker_be71c9a279c013b60bdc0161ee29340d.bindPopup(popup_d837a19c050988f76288897a3262a455)
+        ;
+
+        
+    
+    
+            var marker_6e980d6889d19c9a337124b03e1dd05b = L.marker(
+                [-23.0, -58.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_815d0b342f44d84720a1568158380d29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e980d6889d19c9a337124b03e1dd05b.setIcon(icon_815d0b342f44d84720a1568158380d29);
+        
+    
+        var popup_cf702e36b5bb30ef9c747f98c304c5d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ff85d845a44c399f93b2d57afd4255b = $(`<div id="html_8ff85d845a44c399f93b2d57afd4255b" style="width: 100.0%; height: 100.0%;">Paraguay: 13.12 M USD</div>`)[0];
+                popup_cf702e36b5bb30ef9c747f98c304c5d3.setContent(html_8ff85d845a44c399f93b2d57afd4255b);
+            
+        
+
+        marker_6e980d6889d19c9a337124b03e1dd05b.bindPopup(popup_cf702e36b5bb30ef9c747f98c304c5d3)
+        ;
+
+        
+    
+    
+            var marker_c67901bc411a46f4d050af3b15e000d8 = L.marker(
+                [-10.0, -76.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_da0ddd0a446c62c64f3fae299ba58d5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c67901bc411a46f4d050af3b15e000d8.setIcon(icon_da0ddd0a446c62c64f3fae299ba58d5f);
+        
+    
+        var popup_56d84da92b254808c6e18ea7b740d9ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bdae14a4e51e138cfb9146d14637da8 = $(`<div id="html_3bdae14a4e51e138cfb9146d14637da8" style="width: 100.0%; height: 100.0%;">Peru: 3.48 B USD</div>`)[0];
+                popup_56d84da92b254808c6e18ea7b740d9ea.setContent(html_3bdae14a4e51e138cfb9146d14637da8);
+            
+        
+
+        marker_c67901bc411a46f4d050af3b15e000d8.bindPopup(popup_56d84da92b254808c6e18ea7b740d9ea)
+        ;
+
+        
+    
+    
+            var marker_790e03f9ede2a6d27e77f8c518b7783f = L.marker(
+                [13.0, 122.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_492a325815b23467a0a72747b0fe6769 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_790e03f9ede2a6d27e77f8c518b7783f.setIcon(icon_492a325815b23467a0a72747b0fe6769);
+        
+    
+        var popup_fba4b45c803ddd18f48c8ac9c1195b50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1176a8b9077264b1f97850f6a521f982 = $(`<div id="html_1176a8b9077264b1f97850f6a521f982" style="width: 100.0%; height: 100.0%;">Philippines: 1.61 B USD</div>`)[0];
+                popup_fba4b45c803ddd18f48c8ac9c1195b50.setContent(html_1176a8b9077264b1f97850f6a521f982);
+            
+        
+
+        marker_790e03f9ede2a6d27e77f8c518b7783f.bindPopup(popup_fba4b45c803ddd18f48c8ac9c1195b50)
+        ;
+
+        
+    
+    
+            var marker_72448f142744a894de764e90bad9a666 = L.marker(
+                [52.0, 20.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_cad4681a23e1575624ab63f1b9264876 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72448f142744a894de764e90bad9a666.setIcon(icon_cad4681a23e1575624ab63f1b9264876);
+        
+    
+        var popup_89c40af7c67a141063536f177a181a10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fafd298a268ce024bf1d05496eadcf9 = $(`<div id="html_7fafd298a268ce024bf1d05496eadcf9" style="width: 100.0%; height: 100.0%;">Poland: 2.18 B USD</div>`)[0];
+                popup_89c40af7c67a141063536f177a181a10.setContent(html_7fafd298a268ce024bf1d05496eadcf9);
+            
+        
+
+        marker_72448f142744a894de764e90bad9a666.bindPopup(popup_89c40af7c67a141063536f177a181a10)
+        ;
+
+        
+    
+    
+            var marker_45ff333665d526fb59acf9be1eda388c = L.marker(
+                [39.5, -8.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_00594423f44e951ed94954c78b815393 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45ff333665d526fb59acf9be1eda388c.setIcon(icon_00594423f44e951ed94954c78b815393);
+        
+    
+        var popup_5eceac4c1e45913d4a2f7dda8b2b4bfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34555de523b4bf56c517e6a015a91039 = $(`<div id="html_34555de523b4bf56c517e6a015a91039" style="width: 100.0%; height: 100.0%;">Portugal: 2.55 B USD</div>`)[0];
+                popup_5eceac4c1e45913d4a2f7dda8b2b4bfc.setContent(html_34555de523b4bf56c517e6a015a91039);
+            
+        
+
+        marker_45ff333665d526fb59acf9be1eda388c.bindPopup(popup_5eceac4c1e45913d4a2f7dda8b2b4bfc)
+        ;
+
+        
+    
+    
+            var marker_643fa8a2e7626f567ca31a3022e3904f = L.marker(
+                [25.5, 51.25],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_c177d02d6e35a0e1dc4fc9b63650afdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_643fa8a2e7626f567ca31a3022e3904f.setIcon(icon_c177d02d6e35a0e1dc4fc9b63650afdf);
+        
+    
+        var popup_7618638b497057e96445f93497b3d860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_487a5c56c693109a4d385f924a5181fa = $(`<div id="html_487a5c56c693109a4d385f924a5181fa" style="width: 100.0%; height: 100.0%;">Qatar: 148.18 M USD</div>`)[0];
+                popup_7618638b497057e96445f93497b3d860.setContent(html_487a5c56c693109a4d385f924a5181fa);
+            
+        
+
+        marker_643fa8a2e7626f567ca31a3022e3904f.bindPopup(popup_7618638b497057e96445f93497b3d860)
+        ;
+
+        
+    
+    
+            var marker_a4d07121b35f9fffce9122c3e4c988c6 = L.marker(
+                [46.0, 25.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_f50f48e4f95c71abe518c1aeadf22def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4d07121b35f9fffce9122c3e4c988c6.setIcon(icon_f50f48e4f95c71abe518c1aeadf22def);
+        
+    
+        var popup_2b18bb75021152dac039c2e3bc3f15ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d933833cdb01e5bdb043341fc756a1b = $(`<div id="html_2d933833cdb01e5bdb043341fc756a1b" style="width: 100.0%; height: 100.0%;">Romania: 565.11 M USD</div>`)[0];
+                popup_2b18bb75021152dac039c2e3bc3f15ec.setContent(html_2d933833cdb01e5bdb043341fc756a1b);
+            
+        
+
+        marker_a4d07121b35f9fffce9122c3e4c988c6.bindPopup(popup_2b18bb75021152dac039c2e3bc3f15ec)
+        ;
+
+        
+    
+    
+            var marker_c4b510f5a55f48a92738a5adb3fa1902 = L.marker(
+                [60.0, 100.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_1ce7cc819da888f4b0750b7d719ec3fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c4b510f5a55f48a92738a5adb3fa1902.setIcon(icon_1ce7cc819da888f4b0750b7d719ec3fc);
+        
+    
+        var popup_3d1f8cfc21e8cea914aa092beaba61b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_370cee7d822e8bb8691b90952f639c8f = $(`<div id="html_370cee7d822e8bb8691b90952f639c8f" style="width: 100.0%; height: 100.0%;">Russian Federation: 52.13 M USD</div>`)[0];
+                popup_3d1f8cfc21e8cea914aa092beaba61b3.setContent(html_370cee7d822e8bb8691b90952f639c8f);
+            
+        
+
+        marker_c4b510f5a55f48a92738a5adb3fa1902.bindPopup(popup_3d1f8cfc21e8cea914aa092beaba61b3)
+        ;
+
+        
+    
+    
+            var marker_ee658a5ec929ff8dc28069fb78b99856 = L.marker(
+                [-2.0, 30.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_90cc8222ab298e7436088186a9d8ccd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee658a5ec929ff8dc28069fb78b99856.setIcon(icon_90cc8222ab298e7436088186a9d8ccd6);
+        
+    
+        var popup_7ccd2ba6171749a8bbfdf679cd8e2b53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd835f9132915f6313d68a973e9c0909 = $(`<div id="html_dd835f9132915f6313d68a973e9c0909" style="width: 100.0%; height: 100.0%;">Rwanda: 2.72 M USD</div>`)[0];
+                popup_7ccd2ba6171749a8bbfdf679cd8e2b53.setContent(html_dd835f9132915f6313d68a973e9c0909);
+            
+        
+
+        marker_ee658a5ec929ff8dc28069fb78b99856.bindPopup(popup_7ccd2ba6171749a8bbfdf679cd8e2b53)
+        ;
+
+        
+    
+    
+            var marker_1f9d59834e6d41ae4702028bd558cd75 = L.marker(
+                [-15.95, -5.7],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_556363588b8aac35a007b71c9cb133d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f9d59834e6d41ae4702028bd558cd75.setIcon(icon_556363588b8aac35a007b71c9cb133d5);
+        
+    
+        var popup_875b29b4afe5c95593d9f29caf95b3c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb0809487dc2dc0f6ac3afe77103d4b9 = $(`<div id="html_fb0809487dc2dc0f6ac3afe77103d4b9" style="width: 100.0%; height: 100.0%;">Saint Helena: 0.05 M USD</div>`)[0];
+                popup_875b29b4afe5c95593d9f29caf95b3c9.setContent(html_fb0809487dc2dc0f6ac3afe77103d4b9);
+            
+        
+
+        marker_1f9d59834e6d41ae4702028bd558cd75.bindPopup(popup_875b29b4afe5c95593d9f29caf95b3c9)
+        ;
+
+        
+    
+    
+            var marker_337b847355b311b7e389244c3655ae37 = L.marker(
+                [17.33333333, -62.75],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_7ef215c9f2737313b03b9cbf32402f32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_337b847355b311b7e389244c3655ae37.setIcon(icon_7ef215c9f2737313b03b9cbf32402f32);
+        
+    
+        var popup_b1635e7c55d8e9528e816e215b818520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fee6c3fa2e5d637945170bae15bc1652 = $(`<div id="html_fee6c3fa2e5d637945170bae15bc1652" style="width: 100.0%; height: 100.0%;">Saint Kitts and Nevis: 1.01 M USD</div>`)[0];
+                popup_b1635e7c55d8e9528e816e215b818520.setContent(html_fee6c3fa2e5d637945170bae15bc1652);
+            
+        
+
+        marker_337b847355b311b7e389244c3655ae37.bindPopup(popup_b1635e7c55d8e9528e816e215b818520)
+        ;
+
+        
+    
+    
+            var marker_aaaeb1fdbffbc74146bd3ab1bdd51a7c = L.marker(
+                [13.88333333, -60.96666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ad9ad88155a6b2a01a8577527e6c23e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aaaeb1fdbffbc74146bd3ab1bdd51a7c.setIcon(icon_ad9ad88155a6b2a01a8577527e6c23e4);
+        
+    
+        var popup_789a321eca98a0229776d8226105d45d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11a5e9effdf06239dca57beaedcff83e = $(`<div id="html_11a5e9effdf06239dca57beaedcff83e" style="width: 100.0%; height: 100.0%;">Saint Lucia: 0.62 M USD</div>`)[0];
+                popup_789a321eca98a0229776d8226105d45d.setContent(html_11a5e9effdf06239dca57beaedcff83e);
+            
+        
+
+        marker_aaaeb1fdbffbc74146bd3ab1bdd51a7c.bindPopup(popup_789a321eca98a0229776d8226105d45d)
+        ;
+
+        
+    
+    
+            var marker_168f084a7be484b19f1838680e119fbf = L.marker(
+                [46.83333333, -56.33333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_4f2f07068e8ee9297c454d6e7dfef7e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_168f084a7be484b19f1838680e119fbf.setIcon(icon_4f2f07068e8ee9297c454d6e7dfef7e9);
+        
+    
+        var popup_c31edf69f5090ddfa1c72638b6e75ca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d9840346208b57c836ca3d04c19db4d = $(`<div id="html_5d9840346208b57c836ca3d04c19db4d" style="width: 100.0%; height: 100.0%;">Saint Pierre and Miquelon: 2.71 M USD</div>`)[0];
+                popup_c31edf69f5090ddfa1c72638b6e75ca9.setContent(html_5d9840346208b57c836ca3d04c19db4d);
+            
+        
+
+        marker_168f084a7be484b19f1838680e119fbf.bindPopup(popup_c31edf69f5090ddfa1c72638b6e75ca9)
+        ;
+
+        
+    
+    
+            var marker_545aa1b07f8a5eedcf5863bc3a45ecf5 = L.marker(
+                [13.25, -61.2],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ee53cd409f988016c239adcc4498f64b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_545aa1b07f8a5eedcf5863bc3a45ecf5.setIcon(icon_ee53cd409f988016c239adcc4498f64b);
+        
+    
+        var popup_0543f029a6c18419413de417da3ae8af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30e48abf384bc74d8445d94dcc91ca00 = $(`<div id="html_30e48abf384bc74d8445d94dcc91ca00" style="width: 100.0%; height: 100.0%;">Saint Vincent and the Grenadines: 0.15 M USD</div>`)[0];
+                popup_0543f029a6c18419413de417da3ae8af.setContent(html_30e48abf384bc74d8445d94dcc91ca00);
+            
+        
+
+        marker_545aa1b07f8a5eedcf5863bc3a45ecf5.bindPopup(popup_0543f029a6c18419413de417da3ae8af)
+        ;
+
+        
+    
+    
+            var marker_7f56369df2ccb6fa9156fa90e731c6a0 = L.marker(
+                [-13.58333333, -172.33333333],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_4441252f3aae23889a08f0d376bcd761 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f56369df2ccb6fa9156fa90e731c6a0.setIcon(icon_4441252f3aae23889a08f0d376bcd761);
+        
+    
+        var popup_7a08fb2cfc6feb8bf631a4f8ed9b84e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4eb639c532987590da0f6a33b5ca02f4 = $(`<div id="html_4eb639c532987590da0f6a33b5ca02f4" style="width: 100.0%; height: 100.0%;">Samoa: 0.05 M USD</div>`)[0];
+                popup_7a08fb2cfc6feb8bf631a4f8ed9b84e5.setContent(html_4eb639c532987590da0f6a33b5ca02f4);
+            
+        
+
+        marker_7f56369df2ccb6fa9156fa90e731c6a0.bindPopup(popup_7a08fb2cfc6feb8bf631a4f8ed9b84e5)
+        ;
+
+        
+    
+    
+            var marker_60bf86b14f2bef0f12b3dd5472e600ec = L.marker(
+                [25.0, 45.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2fd68eb9648c99c2b1ad899c11a4c919 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_60bf86b14f2bef0f12b3dd5472e600ec.setIcon(icon_2fd68eb9648c99c2b1ad899c11a4c919);
+        
+    
+        var popup_8979ea6e21304f461c8d6bc937ac1acb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38c479b0d230e9cba26f687fa026d0ae = $(`<div id="html_38c479b0d230e9cba26f687fa026d0ae" style="width: 100.0%; height: 100.0%;">Saudi Arabia: 1.59 B USD</div>`)[0];
+                popup_8979ea6e21304f461c8d6bc937ac1acb.setContent(html_38c479b0d230e9cba26f687fa026d0ae);
+            
+        
+
+        marker_60bf86b14f2bef0f12b3dd5472e600ec.bindPopup(popup_8979ea6e21304f461c8d6bc937ac1acb)
+        ;
+
+        
+    
+    
+            var marker_47403f6212ed45216d69a8dfdd355b25 = L.marker(
+                [14.0, -14.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_5a414a86f473f1c0ac6c9200272fb51e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_47403f6212ed45216d69a8dfdd355b25.setIcon(icon_5a414a86f473f1c0ac6c9200272fb51e);
+        
+    
+        var popup_e25e40dd9c51a85337523aaf260fb25d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6757f2025abc1796cdac6d33dc8b19dc = $(`<div id="html_6757f2025abc1796cdac6d33dc8b19dc" style="width: 100.0%; height: 100.0%;">Senegal: 5.28 M USD</div>`)[0];
+                popup_e25e40dd9c51a85337523aaf260fb25d.setContent(html_6757f2025abc1796cdac6d33dc8b19dc);
+            
+        
+
+        marker_47403f6212ed45216d69a8dfdd355b25.bindPopup(popup_e25e40dd9c51a85337523aaf260fb25d)
+        ;
+
+        
+    
+    
+            var marker_5ea507414d654f07ffceeba6725af4c4 = L.marker(
+                [44.1305021, 16.4284181],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_4ff3d71ab49bfb08b460b1eff651f3ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ea507414d654f07ffceeba6725af4c4.setIcon(icon_4ff3d71ab49bfb08b460b1eff651f3ef);
+        
+    
+        var popup_86ee73f9c82285bd361c937177106068 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c539c6d3d2f19e68be24ce814e19b028 = $(`<div id="html_c539c6d3d2f19e68be24ce814e19b028" style="width: 100.0%; height: 100.0%;">Serbia: 108.32 M USD</div>`)[0];
+                popup_86ee73f9c82285bd361c937177106068.setContent(html_c539c6d3d2f19e68be24ce814e19b028);
+            
+        
+
+        marker_5ea507414d654f07ffceeba6725af4c4.bindPopup(popup_86ee73f9c82285bd361c937177106068)
+        ;
+
+        
+    
+    
+            var marker_45798a04b42800cf91f95e493a0deb65 = L.marker(
+                [-4.58333333, 55.66666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_d71dce066ffcd19155c6926564eeaf63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45798a04b42800cf91f95e493a0deb65.setIcon(icon_d71dce066ffcd19155c6926564eeaf63);
+        
+    
+        var popup_a9e5c1ffd6a2355c2dfa5550a54578f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f07b5969b39489758218cd74194cbc8a = $(`<div id="html_f07b5969b39489758218cd74194cbc8a" style="width: 100.0%; height: 100.0%;">Seychelles: 0.91 M USD</div>`)[0];
+                popup_a9e5c1ffd6a2355c2dfa5550a54578f5.setContent(html_f07b5969b39489758218cd74194cbc8a);
+            
+        
+
+        marker_45798a04b42800cf91f95e493a0deb65.bindPopup(popup_a9e5c1ffd6a2355c2dfa5550a54578f5)
+        ;
+
+        
+    
+    
+            var marker_bf49c372aa5b81814e5f758eae105dfa = L.marker(
+                [8.5, -11.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_b023936737dad79b0661b93ff7986874 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bf49c372aa5b81814e5f758eae105dfa.setIcon(icon_b023936737dad79b0661b93ff7986874);
+        
+    
+        var popup_f9e9561b81cee4f0dd997246fd3b4bfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec22cd49505e0459d5b70755d0fe976d = $(`<div id="html_ec22cd49505e0459d5b70755d0fe976d" style="width: 100.0%; height: 100.0%;">Sierra Leone: 1.48 M USD</div>`)[0];
+                popup_f9e9561b81cee4f0dd997246fd3b4bfe.setContent(html_ec22cd49505e0459d5b70755d0fe976d);
+            
+        
+
+        marker_bf49c372aa5b81814e5f758eae105dfa.bindPopup(popup_f9e9561b81cee4f0dd997246fd3b4bfe)
+        ;
+
+        
+    
+    
+            var marker_5a9ea08db577355e9014b0594fe13996 = L.marker(
+                [1.36666666, 103.8],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_c4edfff4f3e28445bf8750ebf1ce6b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a9ea08db577355e9014b0594fe13996.setIcon(icon_c4edfff4f3e28445bf8750ebf1ce6b55);
+        
+    
+        var popup_0a88da75874958a647a5723606fd39f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d7462077a31d715554e357f11502a02 = $(`<div id="html_3d7462077a31d715554e357f11502a02" style="width: 100.0%; height: 100.0%;">Singapore: 1.06 B USD</div>`)[0];
+                popup_0a88da75874958a647a5723606fd39f4.setContent(html_3d7462077a31d715554e357f11502a02);
+            
+        
+
+        marker_5a9ea08db577355e9014b0594fe13996.bindPopup(popup_0a88da75874958a647a5723606fd39f4)
+        ;
+
+        
+    
+    
+            var marker_efdeca205a511e52b6ac176245857d7d = L.marker(
+                [48.66666666, 19.5],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_dac59fba4255b17012fa9c4c3ec19b3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_efdeca205a511e52b6ac176245857d7d.setIcon(icon_dac59fba4255b17012fa9c4c3ec19b3a);
+        
+    
+        var popup_f4c3f8abcfb2195eb9718eff850eb54a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0444b1b75b52191ad10dba028e3bd788 = $(`<div id="html_0444b1b75b52191ad10dba028e3bd788" style="width: 100.0%; height: 100.0%;">Slovakia: 801.15 M USD</div>`)[0];
+                popup_f4c3f8abcfb2195eb9718eff850eb54a.setContent(html_0444b1b75b52191ad10dba028e3bd788);
+            
+        
+
+        marker_efdeca205a511e52b6ac176245857d7d.bindPopup(popup_f4c3f8abcfb2195eb9718eff850eb54a)
+        ;
+
+        
+    
+    
+            var marker_2bf894f4b6b0b6b11551fecf8d538cb8 = L.marker(
+                [46.11666666, 14.81666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_6775f097ce571f3b381143d6b4a50a73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2bf894f4b6b0b6b11551fecf8d538cb8.setIcon(icon_6775f097ce571f3b381143d6b4a50a73);
+        
+    
+        var popup_db4ec2eb306b5eb9c5d727b6924aed43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_694e79182f1d3e16d0115e0a7a8b1cd7 = $(`<div id="html_694e79182f1d3e16d0115e0a7a8b1cd7" style="width: 100.0%; height: 100.0%;">Slovenia: 220.32 M USD</div>`)[0];
+                popup_db4ec2eb306b5eb9c5d727b6924aed43.setContent(html_694e79182f1d3e16d0115e0a7a8b1cd7);
+            
+        
+
+        marker_2bf894f4b6b0b6b11551fecf8d538cb8.bindPopup(popup_db4ec2eb306b5eb9c5d727b6924aed43)
+        ;
+
+        
+    
+    
+            var marker_7111ed0b161f2b43909174f75b97c743 = L.marker(
+                [10.0, 49.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_9513c34cc94142469bdca9ef10a57dac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7111ed0b161f2b43909174f75b97c743.setIcon(icon_9513c34cc94142469bdca9ef10a57dac);
+        
+    
+        var popup_0c6c9de00d3ff01bb77151a58291a26f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84e5f90c888549ff97728fe64a6ca786 = $(`<div id="html_84e5f90c888549ff97728fe64a6ca786" style="width: 100.0%; height: 100.0%;">Somalia: 0.29 M USD</div>`)[0];
+                popup_0c6c9de00d3ff01bb77151a58291a26f.setContent(html_84e5f90c888549ff97728fe64a6ca786);
+            
+        
+
+        marker_7111ed0b161f2b43909174f75b97c743.bindPopup(popup_0c6c9de00d3ff01bb77151a58291a26f)
+        ;
+
+        
+    
+    
+            var marker_b87691a7ef8d0c00b4310060c8f1da67 = L.marker(
+                [-29.0, 24.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_6e39d13d4c224f299f55dac4c5fade5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b87691a7ef8d0c00b4310060c8f1da67.setIcon(icon_6e39d13d4c224f299f55dac4c5fade5e);
+        
+    
+        var popup_63502bca1db29ab5ca8310676bb521ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1c6c8800999d8f1b4f71947618152d1 = $(`<div id="html_d1c6c8800999d8f1b4f71947618152d1" style="width: 100.0%; height: 100.0%;">South Africa: 2.04 B USD</div>`)[0];
+                popup_63502bca1db29ab5ca8310676bb521ab.setContent(html_d1c6c8800999d8f1b4f71947618152d1);
+            
+        
+
+        marker_b87691a7ef8d0c00b4310060c8f1da67.bindPopup(popup_63502bca1db29ab5ca8310676bb521ab)
+        ;
+
+        
+    
+    
+            var marker_3671000d4dee6e57b3cfc84be6ce7b99 = L.marker(
+                [7.0, 30.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_9f7fbea5e3cdd8bab51936683fc30663 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3671000d4dee6e57b3cfc84be6ce7b99.setIcon(icon_9f7fbea5e3cdd8bab51936683fc30663);
+        
+    
+        var popup_d965943b5cd2c4add1599a74da45bf7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f36dd978040beec1ad8b998226913c3f = $(`<div id="html_f36dd978040beec1ad8b998226913c3f" style="width: 100.0%; height: 100.0%;">South Sudan: 0.06 M USD</div>`)[0];
+                popup_d965943b5cd2c4add1599a74da45bf7f.setContent(html_f36dd978040beec1ad8b998226913c3f);
+            
+        
+
+        marker_3671000d4dee6e57b3cfc84be6ce7b99.bindPopup(popup_d965943b5cd2c4add1599a74da45bf7f)
+        ;
+
+        
+    
+    
+            var marker_322b2a7593953d068d88419b36f51cb4 = L.marker(
+                [40.0, -4.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_1154f5915be226f1eba2152beea0b00f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_322b2a7593953d068d88419b36f51cb4.setIcon(icon_1154f5915be226f1eba2152beea0b00f);
+        
+    
+        var popup_6e2d8d61c5ae7aab9ec0ac588fbdcab9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9b63b6e58e865c7278414f0baa7c81f = $(`<div id="html_d9b63b6e58e865c7278414f0baa7c81f" style="width: 100.0%; height: 100.0%;">Spain: 2.94 B USD</div>`)[0];
+                popup_6e2d8d61c5ae7aab9ec0ac588fbdcab9.setContent(html_d9b63b6e58e865c7278414f0baa7c81f);
+            
+        
+
+        marker_322b2a7593953d068d88419b36f51cb4.bindPopup(popup_6e2d8d61c5ae7aab9ec0ac588fbdcab9)
+        ;
+
+        
+    
+    
+            var marker_6bd07354774ab64108854b742e4a4904 = L.marker(
+                [7.0, 81.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_18f1fc51eddd38f84f92ffcdb2b4752f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bd07354774ab64108854b742e4a4904.setIcon(icon_18f1fc51eddd38f84f92ffcdb2b4752f);
+        
+    
+        var popup_45e1fc00dc69451c4f6325b2eef732e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c039d6ed4591e844e7e27573d7002130 = $(`<div id="html_c039d6ed4591e844e7e27573d7002130" style="width: 100.0%; height: 100.0%;">Sri Lanka: 373.57 M USD</div>`)[0];
+                popup_45e1fc00dc69451c4f6325b2eef732e3.setContent(html_c039d6ed4591e844e7e27573d7002130);
+            
+        
+
+        marker_6bd07354774ab64108854b742e4a4904.bindPopup(popup_45e1fc00dc69451c4f6325b2eef732e3)
+        ;
+
+        
+    
+    
+            var marker_0b19e41b5189352ab9dc454a0deb8e13 = L.marker(
+                [15.0, 30.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_081c451647148991b78bae8a2209de15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b19e41b5189352ab9dc454a0deb8e13.setIcon(icon_081c451647148991b78bae8a2209de15);
+        
+    
+        var popup_75d7008042efebfddb0f440025d69e6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_562c0e924ee03063154caa347b6ed2ed = $(`<div id="html_562c0e924ee03063154caa347b6ed2ed" style="width: 100.0%; height: 100.0%;">Sudan: 0.20 M USD</div>`)[0];
+                popup_75d7008042efebfddb0f440025d69e6a.setContent(html_562c0e924ee03063154caa347b6ed2ed);
+            
+        
+
+        marker_0b19e41b5189352ab9dc454a0deb8e13.bindPopup(popup_75d7008042efebfddb0f440025d69e6a)
+        ;
+
+        
+    
+    
+            var marker_00b2f8e3b73dd6812b39391a237012f2 = L.marker(
+                [4.0, -56.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_d70f97f8a42de661d9deabd0d1c268b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00b2f8e3b73dd6812b39391a237012f2.setIcon(icon_d70f97f8a42de661d9deabd0d1c268b2);
+        
+    
+        var popup_dc4d43b9bf85f89c5e80785b52e25d77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ca3cd3b78ddceb2e6d73421162dab59 = $(`<div id="html_6ca3cd3b78ddceb2e6d73421162dab59" style="width: 100.0%; height: 100.0%;">Suriname: 188.65 M USD</div>`)[0];
+                popup_dc4d43b9bf85f89c5e80785b52e25d77.setContent(html_6ca3cd3b78ddceb2e6d73421162dab59);
+            
+        
+
+        marker_00b2f8e3b73dd6812b39391a237012f2.bindPopup(popup_dc4d43b9bf85f89c5e80785b52e25d77)
+        ;
+
+        
+    
+    
+            var marker_5cfcd5113506380179fb147e09201d86 = L.marker(
+                [62.0, 15.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_e64b8ff09c9eb1eed877c9d238ba136c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5cfcd5113506380179fb147e09201d86.setIcon(icon_e64b8ff09c9eb1eed877c9d238ba136c);
+        
+    
+        var popup_a4e9494016d27829b14c9aec129a2054 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_013a4df790b8ad452780350fb594e29a = $(`<div id="html_013a4df790b8ad452780350fb594e29a" style="width: 100.0%; height: 100.0%;">Sweden: 2.80 B USD</div>`)[0];
+                popup_a4e9494016d27829b14c9aec129a2054.setContent(html_013a4df790b8ad452780350fb594e29a);
+            
+        
+
+        marker_5cfcd5113506380179fb147e09201d86.bindPopup(popup_a4e9494016d27829b14c9aec129a2054)
+        ;
+
+        
+    
+    
+            var marker_86b2b2a4aae376adb4c4c4d44664999b = L.marker(
+                [47.0, 8.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_dfc290821b6d6c0a46dec40e1ded2094 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86b2b2a4aae376adb4c4c4d44664999b.setIcon(icon_dfc290821b6d6c0a46dec40e1ded2094);
+        
+    
+        var popup_f2c2c158683a8c336a952ddab7fa7556 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7aae7894910fa9669f194dde0e94599 = $(`<div id="html_b7aae7894910fa9669f194dde0e94599" style="width: 100.0%; height: 100.0%;">Switzerland: 6.23 B USD</div>`)[0];
+                popup_f2c2c158683a8c336a952ddab7fa7556.setContent(html_b7aae7894910fa9669f194dde0e94599);
+            
+        
+
+        marker_86b2b2a4aae376adb4c4c4d44664999b.bindPopup(popup_f2c2c158683a8c336a952ddab7fa7556)
+        ;
+
+        
+    
+    
+            var marker_ddf69824429414a4c4592bfb145b29c8 = L.marker(
+                [35.0, 38.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2ea0ae2db0aad9b67d810a14788bfadf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ddf69824429414a4c4592bfb145b29c8.setIcon(icon_2ea0ae2db0aad9b67d810a14788bfadf);
+        
+    
+        var popup_4604750223f98e9ffa4d70d36f79ad40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3f884d6418db5a3cc240d01dd719523 = $(`<div id="html_c3f884d6418db5a3cc240d01dd719523" style="width: 100.0%; height: 100.0%;">Syria: 3.33 M USD</div>`)[0];
+                popup_4604750223f98e9ffa4d70d36f79ad40.setContent(html_c3f884d6418db5a3cc240d01dd719523);
+            
+        
+
+        marker_ddf69824429414a4c4592bfb145b29c8.bindPopup(popup_4604750223f98e9ffa4d70d36f79ad40)
+        ;
+
+        
+    
+    
+            var marker_ea9bf5a8b46a228346b1f3bcc0de8ac7 = L.marker(
+                [39.0, 71.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_da3818372cd1d0f9695d2752c340e0fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea9bf5a8b46a228346b1f3bcc0de8ac7.setIcon(icon_da3818372cd1d0f9695d2752c340e0fd);
+        
+    
+        var popup_70e5e8afa63e0fb392e181d5cdfb28d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0062f627cedbc700921e3abef824b3b4 = $(`<div id="html_0062f627cedbc700921e3abef824b3b4" style="width: 100.0%; height: 100.0%;">Tajikistan: 0.05 M USD</div>`)[0];
+                popup_70e5e8afa63e0fb392e181d5cdfb28d4.setContent(html_0062f627cedbc700921e3abef824b3b4);
+            
+        
+
+        marker_ea9bf5a8b46a228346b1f3bcc0de8ac7.bindPopup(popup_70e5e8afa63e0fb392e181d5cdfb28d4)
+        ;
+
+        
+    
+    
+            var marker_7031a5209bddf57e9e6f96d2d4744eee = L.marker(
+                [15.0, 100.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_19616e0ddbbb30b5463caf9afa3145ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7031a5209bddf57e9e6f96d2d4744eee.setIcon(icon_19616e0ddbbb30b5463caf9afa3145ae);
+        
+    
+        var popup_b23095564aea7e16fb4df0beed845368 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13193db10cfedba5a71c7ecdf7437184 = $(`<div id="html_13193db10cfedba5a71c7ecdf7437184" style="width: 100.0%; height: 100.0%;">Thailand: 3.59 B USD</div>`)[0];
+                popup_b23095564aea7e16fb4df0beed845368.setContent(html_13193db10cfedba5a71c7ecdf7437184);
+            
+        
+
+        marker_7031a5209bddf57e9e6f96d2d4744eee.bindPopup(popup_b23095564aea7e16fb4df0beed845368)
+        ;
+
+        
+    
+    
+            var marker_80c40458d3e268899a235dca3a10358e = L.marker(
+                [8.0, 1.16666666],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_e74cd9bdacf892cc582c0e77932572ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_80c40458d3e268899a235dca3a10358e.setIcon(icon_e74cd9bdacf892cc582c0e77932572ec);
+        
+    
+        var popup_21ce7320ae97626d4488cbf1090e3d5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52dfffe4f6c20b9bc128632c9feacfba = $(`<div id="html_52dfffe4f6c20b9bc128632c9feacfba" style="width: 100.0%; height: 100.0%;">Togo: 37.70 M USD</div>`)[0];
+                popup_21ce7320ae97626d4488cbf1090e3d5c.setContent(html_52dfffe4f6c20b9bc128632c9feacfba);
+            
+        
+
+        marker_80c40458d3e268899a235dca3a10358e.bindPopup(popup_21ce7320ae97626d4488cbf1090e3d5c)
+        ;
+
+        
+    
+    
+            var marker_c16444486fd50bfdc69c581430f99461 = L.marker(
+                [-20.0, -175.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_40362b3c84ab6a413fb46b15eb7bd5e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c16444486fd50bfdc69c581430f99461.setIcon(icon_40362b3c84ab6a413fb46b15eb7bd5e6);
+        
+    
+        var popup_9e8ceb3825fa74e517b39993c4801e7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c03bffdc8ff42cbc05d1af6f2470309 = $(`<div id="html_3c03bffdc8ff42cbc05d1af6f2470309" style="width: 100.0%; height: 100.0%;">Tonga: 0.20 M USD</div>`)[0];
+                popup_9e8ceb3825fa74e517b39993c4801e7e.setContent(html_3c03bffdc8ff42cbc05d1af6f2470309);
+            
+        
+
+        marker_c16444486fd50bfdc69c581430f99461.bindPopup(popup_9e8ceb3825fa74e517b39993c4801e7e)
+        ;
+
+        
+    
+    
+            var marker_4a3de52f761f984e02584ba915c5f52a = L.marker(
+                [11.0, -61.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_47f497018c7ad32c940fb7196e0f9df5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4a3de52f761f984e02584ba915c5f52a.setIcon(icon_47f497018c7ad32c940fb7196e0f9df5);
+        
+    
+        var popup_87df56124f6aaf934804d7b5d824b499 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a919e15aff15f8f64001a8012804b0f4 = $(`<div id="html_a919e15aff15f8f64001a8012804b0f4" style="width: 100.0%; height: 100.0%;">Trinidad and Tobago: 140.91 M USD</div>`)[0];
+                popup_87df56124f6aaf934804d7b5d824b499.setContent(html_a919e15aff15f8f64001a8012804b0f4);
+            
+        
+
+        marker_4a3de52f761f984e02584ba915c5f52a.bindPopup(popup_87df56124f6aaf934804d7b5d824b499)
+        ;
+
+        
+    
+    
+            var marker_00023be61cc004e0e33d944c8faf4568 = L.marker(
+                [34.0, 9.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_0549d6f185af6490c3c706e2908a11b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00023be61cc004e0e33d944c8faf4568.setIcon(icon_0549d6f185af6490c3c706e2908a11b3);
+        
+    
+        var popup_16432602d4777c1882fd4a7a09a3b6ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a210ac2f9f50c6ed1831f78f74d09eb4 = $(`<div id="html_a210ac2f9f50c6ed1831f78f74d09eb4" style="width: 100.0%; height: 100.0%;">Tunisia: 178.51 M USD</div>`)[0];
+                popup_16432602d4777c1882fd4a7a09a3b6ab.setContent(html_a210ac2f9f50c6ed1831f78f74d09eb4);
+            
+        
+
+        marker_00023be61cc004e0e33d944c8faf4568.bindPopup(popup_16432602d4777c1882fd4a7a09a3b6ab)
+        ;
+
+        
+    
+    
+            var marker_4f869f8ccccc108bafb3b8e1a56200d5 = L.marker(
+                [40.0, 60.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_2b195330071c9296c799ad668424b4a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f869f8ccccc108bafb3b8e1a56200d5.setIcon(icon_2b195330071c9296c799ad668424b4a6);
+        
+    
+        var popup_4e7a0999cff6ec5f0a661e2f9fc5689c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5245793631423e04c56e081d7cea17d2 = $(`<div id="html_5245793631423e04c56e081d7cea17d2" style="width: 100.0%; height: 100.0%;">Turkmenistan: 32.41 M USD</div>`)[0];
+                popup_4e7a0999cff6ec5f0a661e2f9fc5689c.setContent(html_5245793631423e04c56e081d7cea17d2);
+            
+        
+
+        marker_4f869f8ccccc108bafb3b8e1a56200d5.bindPopup(popup_4e7a0999cff6ec5f0a661e2f9fc5689c)
+        ;
+
+        
+    
+    
+            var marker_daaa8bb5bf73adad489390fa41a362b1 = L.marker(
+                [38.0, -97.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_ea82a1784ddcf9c73bd2f3588aec1592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_daaa8bb5bf73adad489390fa41a362b1.setIcon(icon_ea82a1784ddcf9c73bd2f3588aec1592);
+        
+    
+        var popup_97fda68e4c16f35f3db043f38e4dbad0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_569d25f4ca265324ea7fcde5da55aa0e = $(`<div id="html_569d25f4ca265324ea7fcde5da55aa0e" style="width: 100.0%; height: 100.0%;">USA: 275.97 B USD</div>`)[0];
+                popup_97fda68e4c16f35f3db043f38e4dbad0.setContent(html_569d25f4ca265324ea7fcde5da55aa0e);
+            
+        
+
+        marker_daaa8bb5bf73adad489390fa41a362b1.bindPopup(popup_97fda68e4c16f35f3db043f38e4dbad0)
+        ;
+
+        
+    
+    
+            var marker_a62cd16194d24a6ecf16f6994291e47d = L.marker(
+                [1.0, 32.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_8735896d73e4bb06f35182b8daf26e73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a62cd16194d24a6ecf16f6994291e47d.setIcon(icon_8735896d73e4bb06f35182b8daf26e73);
+        
+    
+        var popup_c74b9e4bb55e593297b22d6567240952 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf0859c266b220a792f19a5f38d307e6 = $(`<div id="html_bf0859c266b220a792f19a5f38d307e6" style="width: 100.0%; height: 100.0%;">Uganda: 23.69 M USD</div>`)[0];
+                popup_c74b9e4bb55e593297b22d6567240952.setContent(html_bf0859c266b220a792f19a5f38d307e6);
+            
+        
+
+        marker_a62cd16194d24a6ecf16f6994291e47d.bindPopup(popup_c74b9e4bb55e593297b22d6567240952)
+        ;
+
+        
+    
+    
+            var marker_e990a5aed6847bc226f46c300770f3db = L.marker(
+                [49.0, 32.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_7741c748aa7555a441aaf708d30b7b2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e990a5aed6847bc226f46c300770f3db.setIcon(icon_7741c748aa7555a441aaf708d30b7b2f);
+        
+    
+        var popup_df6dba20afb7196a89a9235dded7c6f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ac9ed1dd3e8425f22e345f3ae98ffbd = $(`<div id="html_7ac9ed1dd3e8425f22e345f3ae98ffbd" style="width: 100.0%; height: 100.0%;">Ukraine: 127.19 M USD</div>`)[0];
+                popup_df6dba20afb7196a89a9235dded7c6f4.setContent(html_7ac9ed1dd3e8425f22e345f3ae98ffbd);
+            
+        
+
+        marker_e990a5aed6847bc226f46c300770f3db.bindPopup(popup_df6dba20afb7196a89a9235dded7c6f4)
+        ;
+
+        
+    
+    
+            var marker_9d8b5b3f9507e14f9d2ca67a3008365a = L.marker(
+                [24.0, 54.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_fc0fc43d61eb05de2464fff909342142 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d8b5b3f9507e14f9d2ca67a3008365a.setIcon(icon_fc0fc43d61eb05de2464fff909342142);
+        
+    
+        var popup_79593f3f507f87ee7c53264e56e7be8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70bf9690318074449d4f2af2dc54e90f = $(`<div id="html_70bf9690318074449d4f2af2dc54e90f" style="width: 100.0%; height: 100.0%;">United Arab Emirates: 598.96 M USD</div>`)[0];
+                popup_79593f3f507f87ee7c53264e56e7be8e.setContent(html_70bf9690318074449d4f2af2dc54e90f);
+            
+        
+
+        marker_9d8b5b3f9507e14f9d2ca67a3008365a.bindPopup(popup_79593f3f507f87ee7c53264e56e7be8e)
+        ;
+
+        
+    
+    
+            var marker_7b2f77a746579270b83231eadce8ba3f = L.marker(
+                [54.0, -2.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_f9f11e85f502a47b2ed501f4aa9ef9f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b2f77a746579270b83231eadce8ba3f.setIcon(icon_f9f11e85f502a47b2ed501f4aa9ef9f9);
+        
+    
+        var popup_a1197f176318d0aef72cc7ba667b52b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63ab73ff9f0fb4afc0e820b9b724cea4 = $(`<div id="html_63ab73ff9f0fb4afc0e820b9b724cea4" style="width: 100.0%; height: 100.0%;">United Kingdom: 6.91 B USD</div>`)[0];
+                popup_a1197f176318d0aef72cc7ba667b52b4.setContent(html_63ab73ff9f0fb4afc0e820b9b724cea4);
+            
+        
+
+        marker_7b2f77a746579270b83231eadce8ba3f.bindPopup(popup_a1197f176318d0aef72cc7ba667b52b4)
+        ;
+
+        
+    
+    
+            var marker_7bd70eef5e1e490d96ed0da42a7d5792 = L.marker(
+                [-33.0, -56.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_89c2a5e7fb28a37784b6291532b31288 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7bd70eef5e1e490d96ed0da42a7d5792.setIcon(icon_89c2a5e7fb28a37784b6291532b31288);
+        
+    
+        var popup_5d319050a7d90c7ed6d3e38c84a7c0f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9d2b1a35f309cd4260c869764a0d11f = $(`<div id="html_c9d2b1a35f309cd4260c869764a0d11f" style="width: 100.0%; height: 100.0%;">Uruguay: 67.74 M USD</div>`)[0];
+                popup_5d319050a7d90c7ed6d3e38c84a7c0f0.setContent(html_c9d2b1a35f309cd4260c869764a0d11f);
+            
+        
+
+        marker_7bd70eef5e1e490d96ed0da42a7d5792.bindPopup(popup_5d319050a7d90c7ed6d3e38c84a7c0f0)
+        ;
+
+        
+    
+    
+            var marker_093f7e1044dad85195f0ab425b3be8c5 = L.marker(
+                [41.0, 64.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_cee287c600aa13c26d00a4fddc4774f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_093f7e1044dad85195f0ab425b3be8c5.setIcon(icon_cee287c600aa13c26d00a4fddc4774f9);
+        
+    
+        var popup_51fcd815b4146e7d737377067d9a07cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_166a99badd287e699c1700afd628b33b = $(`<div id="html_166a99badd287e699c1700afd628b33b" style="width: 100.0%; height: 100.0%;">Uzbekistan: 82.32 M USD</div>`)[0];
+                popup_51fcd815b4146e7d737377067d9a07cb.setContent(html_166a99badd287e699c1700afd628b33b);
+            
+        
+
+        marker_093f7e1044dad85195f0ab425b3be8c5.bindPopup(popup_51fcd815b4146e7d737377067d9a07cb)
+        ;
+
+        
+    
+    
+            var marker_70ffe57561e67bb8cda459d0cfb91e51 = L.marker(
+                [-16.0, 167.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_3bcfcdeafe1844d2e8584f5458855dca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70ffe57561e67bb8cda459d0cfb91e51.setIcon(icon_3bcfcdeafe1844d2e8584f5458855dca);
+        
+    
+        var popup_25fcd41633edf412c83a7f018a61b650 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_841818365d7ffd9db976c10a55b84d9f = $(`<div id="html_841818365d7ffd9db976c10a55b84d9f" style="width: 100.0%; height: 100.0%;">Vanuatu: 0.15 M USD</div>`)[0];
+                popup_25fcd41633edf412c83a7f018a61b650.setContent(html_841818365d7ffd9db976c10a55b84d9f);
+            
+        
+
+        marker_70ffe57561e67bb8cda459d0cfb91e51.bindPopup(popup_25fcd41633edf412c83a7f018a61b650)
+        ;
+
+        
+    
+    
+            var marker_50b60889b9bd46f232c4f509d74f37c2 = L.marker(
+                [8.0, -66.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_f40aa2dadb874afba2360f60e9d38860 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50b60889b9bd46f232c4f509d74f37c2.setIcon(icon_f40aa2dadb874afba2360f60e9d38860);
+        
+    
+        var popup_280d001c9f31df9e2b47441a1630cc61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc77b2c2274d8df702dbb651b8896f53 = $(`<div id="html_cc77b2c2274d8df702dbb651b8896f53" style="width: 100.0%; height: 100.0%;">Venezuela: 16.72 M USD</div>`)[0];
+                popup_280d001c9f31df9e2b47441a1630cc61.setContent(html_cc77b2c2274d8df702dbb651b8896f53);
+            
+        
+
+        marker_50b60889b9bd46f232c4f509d74f37c2.bindPopup(popup_280d001c9f31df9e2b47441a1630cc61)
+        ;
+
+        
+    
+    
+            var marker_d4a7d97f9e51e075fb74ebe17b24be22 = L.marker(
+                [24.5, -13.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_7a9ac9a143e9131fa40dbacd76e26d9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d4a7d97f9e51e075fb74ebe17b24be22.setIcon(icon_7a9ac9a143e9131fa40dbacd76e26d9f);
+        
+    
+        var popup_a9675e96fb82ccba4aae10bfeb4a5150 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5033bbe053ac6cdbe0fe4e3b6e292c39 = $(`<div id="html_5033bbe053ac6cdbe0fe4e3b6e292c39" style="width: 100.0%; height: 100.0%;">Western Sahara: 0.01 M USD</div>`)[0];
+                popup_a9675e96fb82ccba4aae10bfeb4a5150.setContent(html_5033bbe053ac6cdbe0fe4e3b6e292c39);
+            
+        
+
+        marker_d4a7d97f9e51e075fb74ebe17b24be22.bindPopup(popup_a9675e96fb82ccba4aae10bfeb4a5150)
+        ;
+
+        
+    
+    
+            var marker_0f5b6dfcadb9d3a57046f2831acce5e5 = L.marker(
+                [15.0, 48.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_a9cf67469fd7d7d306518894ae4182e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f5b6dfcadb9d3a57046f2831acce5e5.setIcon(icon_a9cf67469fd7d7d306518894ae4182e5);
+        
+    
+        var popup_a29f839b37d26e55b2bf2646dcfd41e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe7a4250c089d6861a158240270a9058 = $(`<div id="html_fe7a4250c089d6861a158240270a9058" style="width: 100.0%; height: 100.0%;">Yemen: 0.18 M USD</div>`)[0];
+                popup_a29f839b37d26e55b2bf2646dcfd41e4.setContent(html_fe7a4250c089d6861a158240270a9058);
+            
+        
+
+        marker_0f5b6dfcadb9d3a57046f2831acce5e5.bindPopup(popup_a29f839b37d26e55b2bf2646dcfd41e4)
+        ;
+
+        
+    
+    
+            var marker_28a7c951b03622926dad4404d7e10b3b = L.marker(
+                [-15.0, 30.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_cea000f62325274a3f5b07280c31f9ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28a7c951b03622926dad4404d7e10b3b.setIcon(icon_cea000f62325274a3f5b07280c31f9ef);
+        
+    
+        var popup_49f6c85da57b50d41650ce954fb4b967 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09e212a0916ddc76aaf7391f354fdd1c = $(`<div id="html_09e212a0916ddc76aaf7391f354fdd1c" style="width: 100.0%; height: 100.0%;">Zambia: 200.83 M USD</div>`)[0];
+                popup_49f6c85da57b50d41650ce954fb4b967.setContent(html_09e212a0916ddc76aaf7391f354fdd1c);
+            
+        
+
+        marker_28a7c951b03622926dad4404d7e10b3b.bindPopup(popup_49f6c85da57b50d41650ce954fb4b967)
+        ;
+
+        
+    
+    
+            var marker_3db86ab6753aa6d5388b69939085e156 = L.marker(
+                [-20.0, 30.0],
+                {}
+            ).addTo(marker_cluster_f7e4169223d2afe90731a056574ca02e);
+        
+    
+            var icon_4a6c17af245573e14107e5586949ba28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3db86ab6753aa6d5388b69939085e156.setIcon(icon_4a6c17af245573e14107e5586949ba28);
+        
+    
+        var popup_4249e57eb69e0b2e5808b9bac891f634 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c9b3d7052df78dd78baa2c87743dcdf = $(`<div id="html_4c9b3d7052df78dd78baa2c87743dcdf" style="width: 100.0%; height: 100.0%;">Zimbabwe: 7.58 M USD</div>`)[0];
+                popup_4249e57eb69e0b2e5808b9bac891f634.setContent(html_4c9b3d7052df78dd78baa2c87743dcdf);
+            
+        
+
+        marker_3db86ab6753aa6d5388b69939085e156.bindPopup(popup_4249e57eb69e0b2e5808b9bac891f634)
+        ;
+
+        
+    
+    
+            marker_cluster_f7e4169223d2afe90731a056574ca02e.addTo(map_5b8e3b4d41aa74bcfd849971e2b6ad57);
+        
+</script>
+</html>

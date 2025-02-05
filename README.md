@@ -4,6 +4,7 @@ This project explores Canada's international trade dynamics by analyzing import 
 https://raw.githack.com/aychzx/caimpoexpo/refs/heads/main/python/carte_interactive.html
 
 Tech Stack
+
 SQL: Queried and managed a relational database to extract relevant trade data.
 Python: Processed and analyzed data using Pandas, NumPy, and Request.
 Matplotlib & Seaborn: Generated statistical visualizations to highlight trade trends.
@@ -25,6 +26,7 @@ Automated data pipeline for efficient preprocessing.
 Designed trade flow graphs showcasing Canada’s top import/export partners.
 Developed a geospatial visualization of trade volumes using Folium.
 Analyzed trade imbalances and dependencies across various countries.
+
 Key Insights
 - The USA remains Canada’s top export partner, while China & Mexico dominate imports.
 - Trade volumes are asymmetrical, highlighting Canada's dependence on specific nations.
@@ -34,6 +36,7 @@ What I Learned
 Optimized SQL queries for large-scale data retrieval.
 Leveraged Python for data transformation, visualization, and automation.
 Created interactive maps and statistical models to enhance insights.
+
 Future Enhancements
 - Automate data retrieval with APIs for real-time updates.
 - Implement machine learning to predict trade trends.

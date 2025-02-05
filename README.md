@@ -9,6 +9,7 @@ Python: Processed and analyzed data using Pandas, NumPy, and Request.
 Matplotlib & Seaborn: Generated statistical visualizations to highlight trade trends.
 Folium: Created an interactive world map to visualize trade volumes.
 Jupyter Notebook: Used for exploratory data analysis and visualization.
+
 Project Highlights
 - Database Management with SQL
 

@@ -1,6 +1,8 @@
 Overview
 This project explores Canada's international trade dynamics by analyzing import and export data from UN Comtrade. Using a combination of SQL and Python, I processed, cleaned, and visualized large datasets to uncover key trade patterns and dependencies.
 
+https://raw.githack.com/aychzx/caimpoexpo/refs/heads/main/python/carte_interactive.html
+
 Tech Stack
 SQL: Queried and managed a relational database to extract relevant trade data.
 Python: Processed and analyzed data using Pandas, NumPy, and Request.

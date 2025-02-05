@@ -33,6 +33,7 @@ Key Insights
 - The analysis provides a comprehensive breakdown of trade dynamics in 2023.
 
 What I Learned
+
 Optimized SQL queries for large-scale data retrieval.
 Leveraged Python for data transformation, visualization, and automation.
 Created interactive maps and statistical models to enhance insights.
